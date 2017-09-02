@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Alberto Montalesi Blog"
+title                    : "Life of a self taught programmer"
 title_separator          : "-"
 name                     : "Alberto Montalesi"
 description              : "My Journey to become a programmer"
