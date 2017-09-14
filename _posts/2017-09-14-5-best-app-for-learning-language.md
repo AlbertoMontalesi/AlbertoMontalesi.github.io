@@ -33,7 +33,7 @@ Here, we are given a topic and we can write as much as we want, thus testing our
 
 [Busuu](https://www.busuu.com) is available in twelve languages: English, Spanish, French, German, Italian, Portuguese (Brazil), Russian, Polish, Turkish, Arabic, Japanese and Chinese.
 
-It follows a freemium model, where some content is blocked behind a monthly subscribtion and it is available on iOS, Android and as a WebApplication.
+It follows a freemium model, where some content is blocked behind a monthly subscription and it is available on iOS, Android and as a WebApplication.
 
 
 
@@ -131,7 +131,7 @@ Compared to [Busuu](https://www.busuu.com), it offers more content for free but 
 
 This is a very different app compared to the previous ones and that is why I wanted to include it in this list.
 
-Instead of simply filling in gaps or memorizing words, [Beelinguapp](https://beelinguapp.com/) offers the users a series of short stories to read simultaneously in two languages. It is possible to listen to the audiobook or read by ourselves aswell as the possibility to turn off one of the two languages.
+Instead of simply filling in gaps or memorizing words, [Beelinguapp](https://beelinguapp.com/) offers the users a series of short stories to read simultaneously in two languages. It is possible to listen to the audiobook or read by ourselves as well as the possibility to turn off one of the two languages.
 
 The app offers a good amount of content for free, with more stories to be purchased.
 
@@ -169,7 +169,7 @@ The paid version offers more types of ways to revise the material but even the f
 
 [Memrise](https://www.memrise.com/) not only offers languages courses but also other topics such as History, Art, Geography and more.
 
-Currently it offers 14 languages and it is available for both iOS and Android aswell as a Web Application.
+Currently it offers 14 languages and it is available for both iOS and Android as well as a Web Application.
 
 
 **PRO**
