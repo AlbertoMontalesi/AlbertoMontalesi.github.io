@@ -22,7 +22,7 @@ The apps in this list can be used all at the same time as they offer different t
 
 
 
-![Busuu](/https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
+![Busuu(https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
 /Busuu.png)
 
 Personally, I think [Busuu](https://www.busuu.com) deserves to be in the first place of this list for many reasons.
@@ -56,7 +56,7 @@ It follows a freemium model, where some content is blocked behind a monthly subs
 
 ## 2. [Lingvist](https://lingvist.com/)
 
-![Lingvist](/https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
+![Lingvist](https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
 /Lingvist.png)
 
 At the second spot I'm placing [Lingvist](https://lingvist.com/), a fairly new app compared to the others on this list.
@@ -93,7 +93,7 @@ Unfortunately, due to the app aiming to only increase your vocabulary you will s
 
 ## 3. [Duolingo](https://www.duolingo.com/)
 
-![Duolingo](/https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
+![Duolingo](https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
 /Duolingo.png)
 
 Ok, you probably already heard of [Duolingo](https://www.duolingo.com/) but if you didn't, let me give you a brief introduction why it made it into my list.
@@ -124,7 +124,7 @@ Compared to [Busuu](https://www.busuu.com), it offers more content for free but 
 
 ## 4. [Beelinguapp](https://beelinguapp.com/)
 
-![Beelinguapp](/https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
+![Beelinguapp](htps://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
 /Beelinguapp.png)
 
 This is a very different app compared to the previous ones and that is why I wanted to include it in this list.
@@ -156,7 +156,7 @@ When the usual exercises from [Duolingo](https://www.duolingo.com/) and [Busuu](
 
 ## 5. [Memrise](https://www.memrise.com/)
 
-![Memrise](/https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
+![Memrise](https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
 /Memrise.png)
 
 Lastly, I want to talk about [Memrise](https://www.memrise.com/), a flashcard app that makes learning new vocabularies fun and easy.
@@ -193,7 +193,7 @@ Currently it offers 14 languages and it is available for both iOS and Android as
 
 ##  [Hello Chinese](http://www.hellochinese.cc/)
 
-![HelloChinese](/https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
+![HelloChinese](htts://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
 /HelloChinese.png)
 
 Probably the best app to learn chinese
@@ -207,7 +207,7 @@ Probably the best app to learn chinese
 
 ###  [Babbel](https://www.babbel.com/?locale=en)
 
-![Babbel](/https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
+![Babbel(https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
 /Babbel.png)
 
 A good alternative to Duolingo or Busuu but only a small amount of content is free
@@ -220,7 +220,7 @@ A good alternative to Duolingo or Busuu but only a small amount of content is fr
 
 ###  [Rosetta Stone](http://www.rosettastone.eu/)
 
-![Rosetta](/https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
+![Rosetta](https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/top-languages-apps
 /Rosetta.png)
 
 Same as [Babbel](https://www.babbel.com/?locale=en), can be a good alternative but it is quite pricey.
