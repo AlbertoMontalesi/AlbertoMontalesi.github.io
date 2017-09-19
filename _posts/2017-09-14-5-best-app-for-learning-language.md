@@ -13,9 +13,9 @@ I love to learn new languages, as a way to communicate to people or just to unde
 That's why when I decided I wanted to improve my German I tried several apps, both free and paid and here I will give you my opinion on their pros and cons.
 
 Honestly speaking, most of them won't help you much, unless you aim to simply improve your vocabulary.
-If you are starting from zero the best choice would be to pair one of these app with another resource where to learn grammar because in most apps the quality of explanations it not sufficient.
+If you are starting from zero the best choice would be to pair one of these app with another resource where to learn grammar because in most apps the quality of explanations is not sufficient.
 
-The apps in this list can be used all at the same time as they offer different types of exercises and you will gain more by not focusin only on one of them. So i suggest you try all of them and stick with at least two for the best results.
+The apps in this list can be used all at the same time as they offer different types of exercises and you will gain more by not focusin only on one of them. So I suggest you try all of them and stick with at least two for the best results.
 
 
 ## 1. [Busuu](https://www.busuu.com)
