@@ -9,11 +9,10 @@ tags:
 
 
 # Learning ruby on rails in 2017
-For a more detailed explanation on why learning Rails is still a good choice even in 2017 you can read [this article](https://www.codementor.io/brookecampbell/is-ruby-on-rails-still-worth-it-in-2017-5wxguk5xn) but if you just want a short motivation then you just have to know that Rails is still in the top 10 of the most used programming languages and that is more than enough to make it a viable choice.
+For a more detailed explanation on why learning Rails is still a good choice even in 2017 you can read [this article](https://www.codementor.io/brookecampbell/is-ruby-on-rails-still-worth-it-in-2017-5wxguk5xn), but just keep in mind that despite all the articles about its decrease in popularity, it is still in the top 10 of the most used programming languages and frameworks.
 
-Studying alone can be very hard and if you want to achieve results you will have to put in a lot of effort and be sure that the resources you are using are the best you can find.
-That is why I'm writing this list to help other self-taught developers save time on boring researches.
-
+Studying alone can be very hard and if you want to achieve results you will have to put in a lot of effort and make sure that the resources you are using are the best you can find.
+That is why I'm writing this list including the best resources I've found after many hours of research.
 &nbsp;
 
 
@@ -27,28 +26,22 @@ It's quite long and I suggest you to watch it at incremented speed because Jorda
 
 Apart from this minor flaw I think this is one of the best comprehensive courses on Rails that you can find.
 
-You can get it [here](https://www.udemy.com/professional-rails-5-development-course/)
-
-
-
+You can buy this course [here](https://www.udemy.com/professional-rails-5-development-course/) and be sure to check the author's profile for more courses.
 &nbsp;
 
 ## [ Code4Startup - Build AirBnb with Rails 5](https://code4startup.com/?ref=albertomontalesi)
 
-I belive in learning by doing projects and building AirBnb following Leo's videos will teach you many of the features you will probably implement on your future projects.
+I believe in learning by doing projects and building AirBnb following Leo's videos will teach you many of the features you will probably implement on your future projects.
 
 Despite not being a native speaker, there are no problems in following and understanding him.
 
 Sometimes his explanation could be better, but as far as video courses that make you build a real product I believe that this one is the best.
 
-I remember struggling a lot to find ways to implement certain features on my personal projects and I have to say that this course helped me a lot to understand how to do it and what I was doing wrong.
+I remember struggling a lot to find ways to implement certain features on my personal projects and I have to say that this course helped me a lot to understand how to do them and what I was doing wrong.
 
-The course has been released in the summer of 2017 and it uses Rails 5.
+The course has been released in the summer of 2017 after a very successful [Kickstarter campaign](https://www.kickstarter.com/projects/leotrieu/build-your-own-airbnb-with-ruby-on-rails-and-react) and it is updated to Rails 5.
 
-You can buy this course and many others [here](https://code4startup.com/?ref=albertomontalesi)
-
-
-
+You can buy this course and many others [here](https://code4startup.com/?ref=albertomontalesi).
 &nbsp;
 
 ## [Michael Hartl - Ruby on Rails 5 tutorial book](https://www.railstutorial.org/book)
@@ -61,8 +54,6 @@ Why? It's very simple
 - it provides you with all the foundation to build your own web applications
 
 If you know nothing about Rails and you just want to test the ground then this book is what you need, you can read it for free [here](https://www.railstutorial.org/book) but you can also buy a copy on the [author website](https://www.railstutorial.org/)
-
-
 &nbsp;
 
 ## [Drifting Ruby - Youtube channel](https://www.youtube.com/channel/UCxJaNyXCQw0mghY0hA1wA9w) & [GoRails - Youtube channel](https://www.youtube.com/channel/UCIQmhQxCvLHRr3Beku77tww/featured)
@@ -77,11 +68,11 @@ I suggest you to check out both of these channels once you have a solid grasp of
 
 # Conclusion
 
-With the abovementioned resources you should have enough material to cover from the basics to an intermediate level and be able to create even more advanced apps.
+With the abovementioned resources you should have enough material to cover everything from the basics to an intermediate level and be able to create simple and advanced apps.
 
 Whenever you encounter a problem remember that [stackoverflow](https://stackoverflow.com/) is your best friend and if you can, try to join a community around your area, or one online because working alone can be very tiring and stressing.
 
-Seekin the help of other programmers will help you improve much faster than you think.
+Seeking the help of other programmers will help you improve much faster than you think and will also make the learning experience more enjoyable.
 
 Happy Coding! and enjoy your time with Rails, I am sure you will love it as much as I do.
 
