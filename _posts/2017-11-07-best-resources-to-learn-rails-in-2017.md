@@ -56,9 +56,14 @@ Why? It's very simple
 If you know nothing about Rails and you just want to test the ground then this book is what you need, you can read it for free [here](https://www.railstutorial.org/book) but you can also buy a copy on the [author website](https://www.railstutorial.org/)
 &nbsp;
 
-## [Drifting Ruby - Youtube channel](https://www.youtube.com/channel/UCxJaNyXCQw0mghY0hA1wA9w) & [GoRails - Youtube channel](https://www.youtube.com/channel/UCIQmhQxCvLHRr3Beku77tww/featured)
+## [Ryan Bates - Rails Casts](http://railscasts.com/)
+The now concluded series of videos by [Ryan Bates](https://twitter.com/rbates?lang=en) used to be the most popular resource to learn new tips and trick for Rails. Unfortunately, the last video dates back to 2013 but don't worry, Rails may have changed a lot but the way of implementing many features, and the logic behind is still similar.
 
-If you just started learning Rails you may not know, or may have just heard about *railscast*, a popular series of videos containing tips and tricks for Rails, up to version 3.
+That is why, despite the old age, these videos still prove useful today and they will surely help you in your path to improve your skills
+
+&nbsp;
+
+## [Drifting Ruby - Youtube channel](https://www.youtube.com/channel/UCxJaNyXCQw0mghY0hA1wA9w) & [GoRails - Youtube channel](https://www.youtube.com/channel/UCIQmhQxCvLHRr3Beku77tww/featured)
 
 Although not as popular as *railscast*, Drifting Ruby and GoRails provide tons of useful tips on how to implement features and how to improve your app.
 
