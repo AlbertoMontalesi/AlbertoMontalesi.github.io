@@ -3,8 +3,8 @@
 
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.5.1 by Michael Rose
-  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.10.1 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
@@ -19,8 +19,21 @@
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
+<<<<<<< HEAD
     {{ content }}
     {% include advertisements.html %}
+=======
+    <div class="initial-content">
+      {{ content }}
+    </div>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include search/search_form.html %}
+      </div>
+    {% endif %}
+
+>>>>>>> fbb7356d74995fb874258cfc37e74b31bd1b318b
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
