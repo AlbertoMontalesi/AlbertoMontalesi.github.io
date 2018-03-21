@@ -1,5 +1,5 @@
 ---
-title: "The best resources to learn Ruby on Rails in 2017"
+title: "The best resources to learn Ruby on Rails in 2018"
 categories:
   - BestOf
 tags:
@@ -8,8 +8,8 @@ tags:
 ---
 
 
-# Learning ruby on rails in 2017
-For a more detailed explanation on why learning Rails is still a good choice even in 2017 you can read [this article](https://www.codementor.io/brookecampbell/is-ruby-on-rails-still-worth-it-in-2017-5wxguk5xn), but just keep in mind that despite all the articles about its decrease in popularity, it is still in the top 10 of the most used programming languages and frameworks.
+# Learning ruby on rails in 2018
+For a more detailed explanation on why learning Rails is still a good choice even in 2018 you can read [this article](https://www.codementor.io/brookecampbell/is-ruby-on-rails-still-worth-it-in-2017-5wxguk5xn), but just keep in mind that despite all the articles about its decrease in popularity, it is still in the top 10 of the most used programming languages and frameworks.
 
 Studying alone can be very hard and if you want to achieve results you will have to put in a lot of effort and make sure that the resources you are using are the best you can find.
 That is why I'm writing this list including the best resources I've found after many hours of research.

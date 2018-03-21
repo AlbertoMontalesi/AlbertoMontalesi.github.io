@@ -1,5 +1,5 @@
 ---
-title: "Agile web development with rails 5 Book Revew"
+title: "Agile web development with Rails 5 Book Revew"
 categories:
   - Review
 tags:
