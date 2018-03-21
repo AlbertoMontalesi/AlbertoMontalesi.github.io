@@ -12,7 +12,7 @@ tags:
 
 The new CSS Grid module make it very easy to create website layouts and as it is now supported by all browsers, it is a must know for all front-end developers.
 
-!(https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/cssgrid/Css_grid_can_i_use.png)
+![can-i-use-it-grid](https://albertomontalesi.github.io/alberto_montalesi_blog/assets/images/cssgrid/Css_grid_can_i_use.png)
 
 
 Here I am going to show you 4 free resources where you can get started with CSS Grid.
