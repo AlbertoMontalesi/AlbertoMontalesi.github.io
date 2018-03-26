@@ -15,8 +15,8 @@ With the introduction of **Let** and **Const** in **ES6** we can know better def
 **Var** are **function scoped**, which means that if we declare them inside a **for loop** (which is a **block** scope) they will be available globally.
 
 ``` javascript 
-for (var i =0; i< 10; i++) {
-  var global = "I am avaible globally";
+for (var i = 0; i < 10; i++) {
+  var global = "I am available globally";
 }
 
 console.log(global);
@@ -26,7 +26,7 @@ console.log(global);
 
 ## Let 
 
-**Let** (and **const**) are **block scoped** meaning that they will be available only inside of the block where they are declared and its sub-blocks;
+**Let** (and **const**) are **block scoped** meaning that they will be available only inside of the block where they are declared and its sub-blocks.
 
 ``` javascript
 let x = "global";
@@ -83,7 +83,7 @@ According to **MDN** the definition of the temporal dead zone is:
 
 > In ECMAScript 2015, let bindings are not subject to **Variable Hoisting**, which means that let declarations do not move to the top of the current execution context. Referencing the variable in the block before the initialization results in a ReferenceError (contrary to a variable declared with var, which will just have the undefined value). The variable is in a “temporal dead zone” from the start of the block until the initialization is processed.
 
-Let's look at an example
+Let's look at an example:
 
 ```javascript
 console.log(i);
@@ -101,7 +101,7 @@ let j = "I am a let";
 **Var** can be accessed **before** they are defined, but we cant't access their **value**.
 **Let** and **Const** can't be accessed **before we define them**.
 
-This happens because **var** are subject to **hoisting** which means that they are processed before any code is executed. Declaring a **var** anywhere is equivalent to **declaring it at the top**. This is why we can still access the **var** but we can't yet see it's content, hence the **undfined** result.
+This happens because **var** are subject to **hoisting** which means that they are processed before any code is executed. Declaring a **var** anywhere is equivalent to **declaring it at the top**. This is why we can still access the **var** but we can't yet see its content, hence the **undfined** result.
 
 
 ---
@@ -109,7 +109,7 @@ This happens because **var** are subject to **hoisting** which means that they a
 
 ## When to use Var, Let and Const
 
-There is no rule stating where to use each of them and people have different opinions.
+There is no rule stating where to use each of them and people have different opinions. Here I am going to present to you two opinions from popular developers in the JavaScript community.
 
 The first opinion comes from [Mathias Bynes:](https://mathiasbynens.be/notes/es6-const)
 
@@ -127,4 +127,4 @@ The second opinion comes from [Kyle Simpson:]( blog.getify.com/constantly-confus
 
 Which opinion to follow is entirely up to you. As always, do your own research and figure out which one you think is the best.
 
-You may want to [read this article](https://medium.com/@sbakkila/javascript-es-6-let-and-the-dreaded-temporal-dead-zone-85b89314d168) to understand how **let** affects your performances compared to **var** before you choose to follow either [Mathias Bynes](https://mathiasbynens.be/notes/es6-const) or [Kyle Simpson]( blog.getify.com/constantly-confusing-const/)
+You may want to [read this article](https://medium.com/@sbakkila/javascript-es-6-let-and-the-dreaded-temporal-dead-zone-85b89314d168) to understand how **let** affects your performances compared to **var** before you choose to follow either [Mathias Bynes](https://mathiasbynens.be/notes/es6-const) or [Kyle Simpson]( blog.getify.com/constantly-confusing-const/).
