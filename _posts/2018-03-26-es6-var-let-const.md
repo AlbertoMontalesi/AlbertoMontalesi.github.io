@@ -52,7 +52,8 @@ const constant = 'I am a constant';
 
 constant = " I can't be reassigned";
 
-// it will raise: Uncaught TypeError: Assignment to constant variable
+// it will raise: Uncaught TypeError: Assignment 
+// to constant variable
 ```
 
 
@@ -69,7 +70,9 @@ const person = {
 
 person.age = 26;
 
-// in this case no error will be raised, we are not re-assigning the variable but just one of its properties.
+// in this case no error will be raised, we are not
+// re-assigning the variable but just 
+// one of its properties.
 
 ``` 
 
@@ -91,7 +94,8 @@ var i = "I am a variable";
 console.log(j);
 let j = "I am a let";
 
-// expected output: ReferenceError: can't access lexical declaration `j' before initialization
+// expected output: ReferenceError: can't access 
+// lexical declaration `j' before initialization
 ```
 
 **Var** can be accessed **before** they are defined, but we cant't access their **value**.
