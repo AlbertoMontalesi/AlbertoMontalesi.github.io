@@ -1,5 +1,5 @@
 ---
-title: "ES6 #1: Var vs Let vs Const & the temporal dead zone"
+title: "ES6 for Beginners #1: Var vs Let vs Const & the temporal dead zone"
 categories:
   - ES6
 tags:
@@ -7,6 +7,7 @@ tags:
   - guide
 ---
 
+![ES6-card-1](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-1.jpg)
 
 With the introduction of **Let** and **Const** in **ES6** we can know better define our variable depending on our needs. Let's have a look at the major differences between them.
 
@@ -21,7 +22,7 @@ for (var i = 0; i < 10; i++) {
 
 console.log(global);
 
-// expected output: I am avaible globally
+// expected output: I am available globally
 ```
 
 ## Let 
@@ -50,15 +51,15 @@ Similarly to **let**, **const** are **block-scoped** but they differ in the fact
 ``` javascript
 const constant = 'I am a constant';
 
-constant = " I can't be reassigned";
+constant = " I can't be re-assigned";
 
-// it will raise: Uncaught TypeError: Assignment 
+// it will raise: Uncaught TypeError: Assignment
 // to constant variable
 ```
 
 
 **Important** 
-This **does not** mean that **const are immutable**. 
+This **does not** mean that **const are immutable**.
 
 ###  The content of a Const is an Object
 
@@ -98,10 +99,10 @@ let j = "I am a let";
 // lexical declaration `j' before initialization
 ```
 
-**Var** can be accessed **before** they are defined, but we cant't access their **value**.
+**Var** can be accessed **before** they are defined, but we can't access their **value**.
 **Let** and **Const** can't be accessed **before we define them**.
 
-This happens because **var** are subject to **hoisting** which means that they are processed before any code is executed. Declaring a **var** anywhere is equivalent to **declaring it at the top**. This is why we can still access the **var** but we can't yet see its content, hence the **undfined** result.
+This happens because **var** are subject to **hoisting** which means that they are processed before any code is executed. Declaring a **var** anywhere is equivalent to **declaring it at the top**. This is why we can still access the **var** but we can't yet see its content, hence the **undefined** result.
 
 
 ---

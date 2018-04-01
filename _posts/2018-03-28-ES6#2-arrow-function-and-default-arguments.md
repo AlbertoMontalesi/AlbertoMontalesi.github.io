@@ -1,11 +1,14 @@
 ---
-title: "ES6 #2: Arrow functions & default arguments"
+title: "ES6 for Beginners #2: Arrow functions & default arguments"
 categories:
   - ES6
 tags:
   - programming
   - guide
 ---
+
+
+![ES6-card-1](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-2.jpg)
 
 ## What is an arrow function
 
