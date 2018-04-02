@@ -8,7 +8,7 @@ tags:
 ---
 
 
-![ES6-card-1](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-2.jpg)
+![ES6-card-2](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-2.jpg)
 
 ## What is an arrow function
 
@@ -16,8 +16,8 @@ ES6 introduced fat arrows (=>) as a way to declare functions.
 This is how we would normally declare a function in ES5:
 
 ``` javascript
-const greeting = (function(name) {
-  return `hello ${name}`;
+var greeting = (function(name) {
+  return "hello " + name;
 })
 ```
 

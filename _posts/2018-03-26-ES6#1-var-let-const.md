@@ -43,6 +43,7 @@ console.log(x);
 // expected output: global
 ```
 
+
 ## Const
 
 Similarly to **let**, **const** are **block-scoped** but they differ in the fact that their value **can't change through re-assignment or can't be  redeclared**.
@@ -51,7 +52,7 @@ Similarly to **let**, **const** are **block-scoped** but they differ in the fact
 ``` javascript
 const constant = 'I am a constant';
 
-constant = " I can't be re-assigned";
+constant = " I can't be reassigned";
 
 // it will raise: Uncaught TypeError: Assignment
 // to constant variable
