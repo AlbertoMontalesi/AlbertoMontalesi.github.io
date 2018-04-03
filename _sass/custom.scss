@@ -4,7 +4,8 @@
 
 .course-grid {
   display:grid;
-  grid-template-columns: minmax(300px, 1fr);
+  grid-gap: 20px;
+  grid-template-columns: minmax(200px, 1fr);
 }
 
 .course-card {
@@ -27,11 +28,13 @@
 }
 
 .course-cta {
+  text-transform: uppercase;
+  text-decoration: none;
   display: block;
   width: 200px;
   margin: auto;
   background-color: #FAD700;
-  font-size: 2rem;
   color: #2C3E50;
+  border-radius: 10px;
 }
 
