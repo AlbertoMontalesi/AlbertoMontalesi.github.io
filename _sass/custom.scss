@@ -2,8 +2,9 @@
 /* COURSES PAGE */
 
 
-#course-grid {
-  grid-template-columns: minmax(500px, 1fr);
+.course-grid {
+  display:grid;
+  grid-template-columns: minmax(300px, 1fr);
 }
 
 .course-card {
