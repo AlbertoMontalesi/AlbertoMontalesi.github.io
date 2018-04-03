@@ -5,7 +5,7 @@
 .course-grid {
   display:grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns:auto-fit, minmax(250px, 1fr);
 }
 
 .course-card {
@@ -28,17 +28,17 @@
   width: 100%;
 }
 
-.course-cta {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  width: 200px;
-  margin: auto;
-  margin-bottom:20px;
-  padding: 15px;
-  background-color: #FAD700;
-  color: #2C3E50;
-  font-weight: bold;
-  border-radius: 4px;
-}
+// .course-cta {
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   display: block;
+//   width: auto;
+//   margin: auto;
+//   margin-bottom:20px;
+//   padding: 15px;
+//   background-color: #FAD700;
+//   color: #2C3E50;
+//   font-weight: bold;
+//   border-radius: 4px;
+// }
 
