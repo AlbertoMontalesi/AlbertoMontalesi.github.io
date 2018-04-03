@@ -1,0 +1,10 @@
+.course-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid black;
+}
+
+.course-card img {
+  width: 100%;
+}
+
