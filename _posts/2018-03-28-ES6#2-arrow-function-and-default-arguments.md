@@ -10,6 +10,7 @@ tags:
 
 ![ES6-card-2](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-2.jpg)
 
+&nbsp;
 ## What is an arrow function
 
 ES6 introduced fat arrows (=>) as a way to declare functions.
@@ -45,7 +46,8 @@ const greeting = () => {
   return "hello";
 }
 ```
-
+---
+&nbsp;
 ## Implicitly return
 
 With arrow functions we can skip the explicit return and return like this:
@@ -79,7 +81,8 @@ const greeting = (name) => `hello ${name}`;
 
 greeting("Tom");
 ```
-
+---
+&nbsp;
 ## Arrow function and the **this** keyword
 
 You need to be careful when using arrow functions in conjunction with the this keyword as they behave differently from normal functions.
@@ -128,6 +131,8 @@ box.addEventListener("click",function() {
 
 Here, the second **this** will inherit from its parent, and will be therefore set to the **const box**.
 
+---
+&nbsp;
 ## When you should avoid arrow functions
 
 Using what we know about the inheritance of the **this keyword** we can define some instances where you should **not** use arrow functions.
@@ -172,7 +177,8 @@ ReferenceError: arguments is not defined
 
 We don't have access to the *arguments object* in arrow functions, we need to use a normal function.
 
-
+---
+&nbsp;
 ## Default function arguments
 
 ES6 makes it very easy to set default function arguments. Let's look at an example:
@@ -209,3 +215,12 @@ const Bill = calculatePrice({ tip: 0.15, total:150});
 We don't even have to pass the parameters in the same order as when we declared our function, since we are calling them the same way as the arguments JavaScript will know how to match them.
 
 Don't worry about restructuring, there will be a chapter in the future about it.
+
+
+---
+
+This was the second part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
+
+You can also read this articles on medium, on my [profile](https://medium.com/@labby92).
+
+Thank you for reading.

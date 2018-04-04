@@ -303,4 +303,20 @@ code.includes("CDE");
 
 ### repeat()
 
-As the name suggests
+As the name suggests, this new method will repeat what we pass in.
+
+``` js
+
+let hello = "Hi";
+console.log(hello.repeat(10));
+// "HiHiHiHiHiHiHiHiHiHi"
+```
+
+
+---
+
+This was the third part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
+
+You can also read this articles on medium, on my [profile](https://medium.com/@labby92).
+
+Thank you for reading.

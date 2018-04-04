@@ -11,6 +11,7 @@ tags:
 
 With the introduction of **Let** and **Const** in **ES6** we can know better define our variable depending on our needs. Let's have a look at the major differences between them.
 
+&nbsp;
 ## Var
 
 **Var** are **function scoped**, which means that if we declare them inside a **for loop** (which is a **block** scope) they will be available globally.
@@ -24,7 +25,7 @@ console.log(global);
 
 // expected output: I am available globally
 ```
-
+&nbsp;
 ## Let 
 
 **Let** (and **const**) are **block scoped** meaning that they will be available only inside of the block where they are declared and its sub-blocks.
@@ -43,7 +44,7 @@ console.log(x);
 // expected output: global
 ```
 
-
+&nbsp;
 ## Const
 
 Similarly to **let**, **const** are **block-scoped** but they differ in the fact that their value **can't change through re-assignment or can't be  redeclared**.
@@ -75,10 +76,10 @@ person.age = 26;
 // in this case no error will be raised, we are not
 // re-assigning the variable but just 
 // one of its properties.
-
 ``` 
 
 ---
+&nbsp;
 ## The temporal dead zone
 
 According to **MDN** the definition of the temporal dead zone is:
@@ -107,7 +108,7 @@ This happens because **var** are subject to **hoisting** which means that they a
 
 
 ---
-
+&nbsp;
 
 ## When to use Var, Let and Const
 
@@ -130,3 +131,14 @@ The second opinion comes from [Kyle Simpson:]( blog.getify.com/constantly-confus
 Which opinion to follow is entirely up to you. As always, do your own research and figure out which one you think is the best.
 
 You may want to [read this article](https://medium.com/@sbakkila/javascript-es-6-let-and-the-dreaded-temporal-dead-zone-85b89314d168) to understand how **let** affects your performances compared to **var** before you choose to follow either [Mathias Bynes](https://mathiasbynens.be/notes/es6-const) or [Kyle Simpson]( blog.getify.com/constantly-confusing-const/).
+
+
+&nbsp;
+
+---
+
+This was the first part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
+
+You can also read this articles on medium, on my [profile](https://medium.com/@labby92).
+
+Thank you for reading.
