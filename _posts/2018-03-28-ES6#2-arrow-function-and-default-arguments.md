@@ -218,6 +218,7 @@ Don't worry about restructuring, there will be a chapter in the future about it.
 
 
 ---
+&nbsp;
 
 This was the second part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
 

@@ -314,6 +314,7 @@ console.log(hello.repeat(10));
 
 
 ---
+&nbsp;
 
 This was the third part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
 

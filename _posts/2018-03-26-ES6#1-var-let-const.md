@@ -12,6 +12,7 @@ tags:
 With the introduction of **Let** and **Const** in **ES6** we can know better define our variable depending on our needs. Let's have a look at the major differences between them.
 
 &nbsp;
+
 ## Var
 
 **Var** are **function scoped**, which means that if we declare them inside a **for loop** (which is a **block** scope) they will be available globally.
@@ -133,9 +134,10 @@ Which opinion to follow is entirely up to you. As always, do your own research a
 You may want to [read this article](https://medium.com/@sbakkila/javascript-es-6-let-and-the-dreaded-temporal-dead-zone-85b89314d168) to understand how **let** affects your performances compared to **var** before you choose to follow either [Mathias Bynes](https://mathiasbynens.be/notes/es6-const) or [Kyle Simpson]( blog.getify.com/constantly-confusing-const/).
 
 
-&nbsp;
 
 ---
+
+&nbsp;
 
 This was the first part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
 
