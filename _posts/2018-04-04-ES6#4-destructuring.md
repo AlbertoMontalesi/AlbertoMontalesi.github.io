@@ -7,6 +7,9 @@ tags:
   - guide
 ---
 
+
+![ES6-card-4] (https://albertomontalesi.github.io/assets/images/ES6/ES6-card-4.jpg)
+
 MDN defines **destructuring** like this:
 
 
