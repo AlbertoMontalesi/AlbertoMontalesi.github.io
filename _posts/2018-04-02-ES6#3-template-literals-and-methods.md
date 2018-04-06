@@ -62,7 +62,7 @@ In ES5 we used to do this to write multi-line strings:
 // We have to include a backslash on each line
 var text = " hello, \
 my name is Alberto \
-how are you?\
+how are you?\ "
 ```
 
 In ES6 we simply have to wrap everything inside backticks, no more backslash on each line.
@@ -207,7 +207,7 @@ str += string + (values[i] || '') ;
 We would have gotten
 
 ```js 
-"Hello, my name is ALberto and I am 25 years oldundefined"
+"Hello, my name is Alberto and I am 25 years oldundefined"
 ```
 
 
