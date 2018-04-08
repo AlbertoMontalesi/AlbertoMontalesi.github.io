@@ -69,5 +69,20 @@ for (const prop of Object.keys(car)){
 remember to talk about how it loops over the prototype's properties
 
 
+```js
 
-Difference between for...of and for...in
+example goes here
+```
+
+
+### Difference between for...of and for...in
+
+
+
+
+## Array improvements
+
+### Array.from()
+
+Array.from() is the first of the many new array methods that ES6 introuced.
+
