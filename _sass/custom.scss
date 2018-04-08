@@ -50,19 +50,19 @@
 
 
 #mc_embed_signup form {
-  margin-top: 20px;
-  background-color: none;
-  padding: none;
+  margin-top: 20px !important;
+  background-color: none !important;
+  padding: none !important;
 }
 
 // style the email input
 #mc_embed_signup input[type="email"] {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 #mc-embedded-subscribe{
-  background-color:#FAD700;
-  color: #2c3e50;
+  background-color:#FAD700 !important;
+  color: #2c3e50 !important;
 }
 
 
