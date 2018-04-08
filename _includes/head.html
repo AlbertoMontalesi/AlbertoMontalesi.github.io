@@ -14,6 +14,17 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+  require(["mojo/signup-forms/Loader"], function (L) {
+    L.start({
+      "baseUrl": "mc.us18.list-manage.com",
+      "uuid": "8da859e874b3e8320eb80489b",
+      "lid": "76535bc113"
+    })
+  })
+</script>
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
