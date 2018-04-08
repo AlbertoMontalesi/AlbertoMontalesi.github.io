@@ -44,3 +44,27 @@
 //   border-radius: 4px;
 // }
 
+
+
+/* mailchimp */
+
+
+#mc_embed_signup form {
+  margin-top: 20px;
+  background-color: none;
+  padding: none;
+}
+
+// style the email input
+#mc_embed_signup input[type="email"] {
+  background-color: #fff;
+}
+
+#mc-embedded-subscribe{
+  background-color:#FAD700;
+  color: #2c3e50;
+}
+
+
+// end mailchimp style
+
