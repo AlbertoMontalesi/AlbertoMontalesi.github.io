@@ -1,1 +1,2 @@
+Sitemap: https://albertomontalesi.github.io/sitemap.xml
 User-agent: *
