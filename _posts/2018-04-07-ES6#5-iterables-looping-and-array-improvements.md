@@ -163,7 +163,7 @@ Array.from() is the first of the many new array methods that ES6 introuced.
 
 It will take something **arrayish**, meaning something that looks like an array but it isnt, and transform it into a real array.
 
-``` html
+``` js
 <div class="fruit">
   <p> Apple </p>
   <p> Banana </p>
