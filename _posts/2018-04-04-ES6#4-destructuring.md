@@ -158,7 +158,7 @@ const bill = totalBill({ tax: 0.15, total: 150});
 
 &nbsp;
 
-This was the third part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
+This was the fourth part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
 
 You can also read this articles on medium, on my [profile](https://medium.com/@labby92).
 
