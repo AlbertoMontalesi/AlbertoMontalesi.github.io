@@ -39,7 +39,7 @@ In ES5 we used to write this:
 var a = 1;
 var b = 10;
 console.log('1 * 10 is ' + ( a * b));
-// "1 * 10 is 10
+// 1 * 10 is 10
 
 ```
 
@@ -49,7 +49,7 @@ In ES6 we can use backticks to reduce our typing:
 var a = 1;
 var b = 10;
 console.log(`1 * 10 is ${a * b}`);
-// "1 * 10 is 10
+// 1 * 10 is 10
 ```
 
 &nbsp;
@@ -81,9 +81,9 @@ It's very easy to nest a template inside another one, like this:
 
 ``` js
 const markup = `
-<li>
+<ul>
   ${people.map(person => `<li>  ${person.name}</li>`)}
-</li>
+</ul>
 `;
 ```
 
@@ -91,7 +91,7 @@ const markup = `
 
 ###  Add a ternary operator
 
-We can easily add some logic inside our empplate string by using a ternary operator:
+We can easily add some logic inside our template string by using a ternary operator:
 
 ``` js
 // create an artist with name and age
@@ -116,10 +116,10 @@ Similarly to the example above, if we want we can pass a function inside a templ
 
 ``` js
 const groceries = {
-  meat: "pork chop";
-  veggie: "salad";
-  fruit: "apple";
-  others: ['mushrooms', 'instant noodles', 'instant soup']
+  meat: "pork chop",
+  veggie: "salad",
+  fruit: "apple",
+  others: ['mushrooms', 'instant noodles', 'instant soup'],
 }
 
 // this function will map each individual value of our groceries
@@ -137,7 +137,7 @@ const markup = `
     <p> ${groceries.meat} </p>
     <p> ${groceries.veggie} </p>
     <p> ${groceries.fruit} </p>
-    ${groceryList(groceries.others)}
+    <p>${groceryList(groceries.others)} </p>
   <div>
 `
 ```
@@ -159,7 +159,7 @@ function myTag(strings, ...values){
 
 
 const name = "Alberto";
-const age = "25'
+const age = "25";
 // we tag the function by putting its name in front of our string
 const sentence = myTag `Hello my name is ${name} and I am ${age} years old`;
 
@@ -258,16 +258,16 @@ code.startsWith("DEF",3);
 
 ### endsWith()
 
-Similarly to **startsWith()** this new method will check if the strings end with the value we pass in:
+Similarly to **startsWith()** this new method will check if the string ends with the value we pass in:
 
 ```js
 const code = "ABCDEF";
 
-code.endssWith("DDD");
+code.endsWith("DDD");
 // false
-code.endssWith("def");
+code.endsWith("def");
 // false, endsWith is case sensitive
-code.endssWith("DEF");
+code.endsWith("DEF");
 // true
 
 ```

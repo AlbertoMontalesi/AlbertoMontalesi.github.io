@@ -12,13 +12,13 @@ tags:
 ![ES6-card-5](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-5.jpg)
 
 
-ES6 introduced new ways to create loops. We will start by looking at the **for of** loop.
+ES6 introduced a new type of loop, the **for of** loop.
 
 &nbsp;
 
-### The **for of** loop
+## The **for of** loop
 
-#### Iterating over an array
+### Iterating over an array
 
 Usually we would iterate using something like this:
 
@@ -44,7 +44,7 @@ for(const fruit of fruits){
 // orange
 ```
 
-#### Iterating over an object
+### Iterating over an object
 
 Objects are **non interable** so how do we iterate over them?
 We have to first grab all the values of the object using something like **Object.keys()** or the new ES6 **Object.entries()** (more on that in a later article).
@@ -68,7 +68,9 @@ for (const prop of Object.keys(car)){
 &nbsp;
 
 
-### The for in loop
+## The for in loop
+
+Even though it is not a new ES6 loop, let's look at the **for in** loop to understand what differentiate it compared to the **for o**. 
 
 The **for in** loop is a bit different because it will iterate over all the [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) of an object in no particular order.
 
@@ -91,7 +93,7 @@ for (const prop in car){
 
 &nbsp;
 
-### Difference between for...of and for...in
+## Difference between for...of and for...in
 
 The first difference we can see is by looking at this example:
 
@@ -164,7 +166,7 @@ Array.from() is the first of the many new array methods that ES6 introuced.
 It will take something **arrayish**, meaning something that looks like an array but it isnt, and transform it into a real array.
 
 ``` js
-<div class="fruit">
+<div class="fruits">
   <p> Apple </p>
   <p> Banana </p>
   <p> Orange <p>

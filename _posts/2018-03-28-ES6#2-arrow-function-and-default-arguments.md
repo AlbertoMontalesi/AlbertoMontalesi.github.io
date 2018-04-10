@@ -62,7 +62,7 @@ Let's say we want to implicitly return an **object literal**, we would do like t
 const race = "100m dash";
 const runners = [ "Usain Bolt", "Justin Gatlin", "Asafa Powell" ];
 
-const winner = runners.map(( runner, i) =>  ({ name: runner, race, place: I +1})));
+const winner = runners.map(( runner, i) =>  ({ name: runner, race, place: i +1})));
 
 ```
 
@@ -185,7 +185,7 @@ ES6 makes it very easy to set default function arguments. Let's look at an examp
 
 ``` javascript
 function calculatePrice(total, tax = 0.1, tip = 0.05){
-// When to value is given for tax or tip, the default 0.1 and 0.05 will be used 
+// When no value is given for tax or tip, the default 0.1 and 0.05 will be used 
 return total + (total * tax) + (total * tip);,
 }
 ```
@@ -206,7 +206,7 @@ calculatePrice(100, undefined, 0.15)
 
 It works, but it's not very nice, how to improve it?
 
-With **restructuring** we can write this:
+With **destructuring** we can write this:
 
 ``` javascript
 const Bill = calculatePrice({ tip: 0.15, total:150});
@@ -214,7 +214,7 @@ const Bill = calculatePrice({ tip: 0.15, total:150});
 
 We don't even have to pass the parameters in the same order as when we declared our function, since we are calling them the same way as the arguments JavaScript will know how to match them.
 
-Don't worry about restructuring, there will be a chapter in the future about it.
+Don't worry about destructuring, we will talk about it in [Part 4](https://albertomontalesi.github.io/es6/ES6-4-destructuring/).
 
 
 ---

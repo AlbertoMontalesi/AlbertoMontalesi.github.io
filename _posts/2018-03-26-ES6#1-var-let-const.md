@@ -68,8 +68,8 @@ This **does not** mean that **const are immutable**.
 
 ``` javascript
 const person = {
-  name: 'Alberto';
-  age: 25;
+  name: 'Alberto',
+  age: 25,
 }
 
 person.age = 26;
