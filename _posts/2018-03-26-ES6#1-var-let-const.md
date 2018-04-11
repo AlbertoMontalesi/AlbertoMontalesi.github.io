@@ -1,5 +1,5 @@
 ---
-title: "ES6 for Beginners #1: Var vs Let vs Const & the temporal dead zone"
+title: "JavaScript ES6 for Beginners #1: Var vs Let vs Const & the temporal dead zone"
 categories:
   - ES6
 tags:

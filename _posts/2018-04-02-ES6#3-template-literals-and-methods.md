@@ -1,5 +1,5 @@
 ---
-title: "ES6 for Beginners #3: Template literals & additional string methods"
+title: "JavaScript ES6 for Beginners #3: Template literals & additional string methods"
 categories:
   - ES6
 tags:

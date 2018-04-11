@@ -1,5 +1,5 @@
 ---
-title: "ES6 for Beginners #2: Arrow functions & default arguments"
+title: "JavaScript ES6 for Beginners #2: Arrow functions & default arguments"
 categories:
   - ES6
 tags:

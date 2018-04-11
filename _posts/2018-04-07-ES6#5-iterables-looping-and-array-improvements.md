@@ -1,5 +1,5 @@
 ---
-title: "ES6 for Beginners #5: Iterables, Looping and Array improvements"
+title: "JavaScript ES6 for Beginners #5: Iterables, Looping and Array improvements"
 categories:
   - ES6
 tags:

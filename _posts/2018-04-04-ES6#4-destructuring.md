@@ -1,5 +1,5 @@
 ---
-title: "ES6 for Beginners #4: Destructuring"
+title: "JavaScript ES6 for Beginners #4: Destructuring"
 categories:
   - ES6
 tags:
