@@ -96,8 +96,8 @@ We can easily add some logic inside our template string by using a ternary opera
 ``` js
 // create an artist with name and age
 const artist = {
-  name: "Bon Jovi";
-  age: 56;
+  name: "Bon Jovi",
+  age: 56,
 }
 
 // only if the artist object has a song property we then add it to our paragraph, otherwise we return nothing
