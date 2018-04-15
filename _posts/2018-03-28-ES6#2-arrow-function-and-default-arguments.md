@@ -149,11 +149,11 @@ button.addEventListener("click", () => {
 
 ``` javascript
 const person = {
-  age: 10;
+  age: 10,
   grow: () => {
     // error: *this* refers to the window
-    this.age ++;
-    }
+    this.age ++,
+    },
 }
 ```
 
