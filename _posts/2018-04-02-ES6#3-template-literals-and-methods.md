@@ -110,7 +110,7 @@ const text = `
 ```
 &nbsp;
 
-### pass a function inside a template literal
+### Pass a function inside a template literal
 
 Similarly to the example above, if we want we can pass a function inside a template literal.
 

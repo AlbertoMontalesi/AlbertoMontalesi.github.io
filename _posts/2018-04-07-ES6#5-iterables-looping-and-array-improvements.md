@@ -46,7 +46,7 @@ for(const fruit of fruits){
 
 ### Iterating over an object
 
-Objects are **non interable** so how do we iterate over them?
+Objects are **non iterable** so how do we iterate over them?
 We have to first grab all the values of the object using something like **Object.keys()** or the new ES6 **Object.entries()** (more on that in a later article).
 
 
@@ -70,7 +70,7 @@ for (const prop of Object.keys(car)){
 
 ## The for in loop
 
-Even though it is not a new ES6 loop, let's look at the **for in** loop to understand what differentiate it compared to the **for o**. 
+Even though it is not a new ES6 loop, let's look at the **for in** loop to understand what differentiate it compared to the **for of**. 
 
 The **for in** loop is a bit different because it will iterate over all the [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) of an object in no particular order.
 
@@ -161,9 +161,9 @@ for (const prop in fruit){
 
 ### Array.from()
 
-Array.from() is the first of the many new array methods that ES6 introuced.
+Array.from() is the first of the many new array methods that ES6 introduced.
 
-It will take something **arrayish**, meaning something that looks like an array but it isnt, and transform it into a real array.
+It will take something **arrayish**, meaning something that looks like an array but it isn't, and transform it into a real array.
 
 ``` js
 <div class="fruits">
@@ -236,7 +236,7 @@ console.log(digits);
 
 **Array.find()** returns the value of the first element in the array that satisfies the provided testing function. Otherwise *undefined* is returned.
 
-It can be useful in instances where we have a json file, maybe coming from an API from instagram or something similar and we want to grab a specific post with a speciic code that identifies it.
+It can be useful in instances where we have a json file, maybe coming from an API from instagram or something similar and we want to grab a specific post with a specific code that identifies it.
 
 Let's looks at a simple example to see how **Array.find()** works.
 
@@ -284,7 +284,7 @@ let arrayEvery = array.every(e => e > 2);
 console.log(arrayEvery);
 // false 
 ```
-Simply put, the first condition is true, because there are **some** elements greter than 2, but the second is false because **not every element** is greater than 2.
+Simply put, the first condition is true, because there are **some** elements greater than 2, but the second is false because **not every element** is greater than 2.
 
 
 ---
