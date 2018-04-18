@@ -7,6 +7,8 @@ tags:
   - guide
 ---
 
+![ES6-card-7](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-7.jpg)
+
 In this article we will look at the many upgrades brought by ES6 to the Object literal notation.
 
 ## Deconstructing variables into keys and values
