@@ -151,10 +151,74 @@ As we mentioned earlier we can use them to create as identifiers for object prop
 
 ``` js 
 const office = {
-  "Tom" : CEO,
-  "Mark": CTO,
-  "Mark": CIO,
+  "Tom" : "CEO",
+  "Mark": "CTO",
+  "Mark": "CIO",
 }
+
+for (person in office){
+  console.log(person);
+}
+// Tom
+// Mark
 ```
 Here we have our office object with 3 people, two of which share the same name, a common situation.
 To avoid naming collisions we can use symbols.
+
+``` js
+const office = {
+  [Symbol("Tom")] : "CEO",
+  [Symbol("Mark")] : "CTO",
+  [Symbol("Mark")] : "CIO",
+}
+
+for(person in office) {
+  console.log(person);
+}
+// undefined
+```
+
+We got undefined when we tried to loop over the symbols because they are **not enumerable** so we can't loop over them with a **for...in**.
+
+If we want to retrieve their object properties we can use **Object.getOwnPropertySymbols()**.
+
+``` js
+const office = {
+  [Symbol("Tom")] : "CEO",
+  [Symbol("Mark")] : "CTO",
+  [Symbol("Mark")] : "CIO",
+}
+
+const symbols = Object.getOwnPropertySymbols(office);
+console.log(symbols);
+// 0: Symbol(Tom)
+​// 1: Symbol(Mark)
+​// 2: Symbol(Mark)
+​// length: 3
+​// __proto__: Array []
+```
+
+We retrieved the array but to be able to access the properties we to use **map**.
+
+```js
+const symbols = Object.getOwnPropertySymbols(office);
+const value = symbols.map(symbol => office[symbol]);
+console.log(value);
+// 0: "CEO"
+​// 1: "CTO"
+​// 2: "CIO"
+​// length: 3
+​// __proto__: Array []
+```
+
+Now we finally got the array containing all the values of our symbols.
+
+
+---
+&nbsp;
+
+This was the seventh part of my ES6 for beginners course, check out the rest of them [here](https://albertomontalesi.github.io/courses/es6).
+
+You can also read this articles on medium, on my [profile](https://medium.com/@labby92).
+
+Thank you for reading.
