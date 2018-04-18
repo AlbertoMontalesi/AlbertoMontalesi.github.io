@@ -26,7 +26,7 @@ console.log(menu);
 // Array [ "tomato", "cucumber", "beans", "pasta", "pork", "beef", "chicken" ]
 ```
 
-The "..." is the spread syntax, and it allowed us to grab all the invidivual values of the arrays veggie and meat and put them inside the array menu and at the same time add a new item in between them.
+The "..." is the spread syntax, and it allowed us to grab all the individual values of the arrays veggie and meat and put them inside the array menu and at the same time add a new item in between them.
 
 &nbsp;
 ### Copy arrays
