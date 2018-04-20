@@ -159,7 +159,7 @@ for (const prop in fruit){
 
 ## Array improvements
 
-### Array.from()
+### `Array.from()`
 
 `Array.from()` is the first of the many new array methods that ES6 introduced.
 
@@ -217,7 +217,7 @@ console.log(fruitArray);
 
 &nbsp;
 
-### Array.of()
+### `Array.of()`
 
 `Array.of()` will create an array with all the arguments we pass into it.
 
@@ -232,7 +232,7 @@ console.log(digits);
 
 &nbsp;
 
-### Array.find()
+### `Array.find()`
 
 `Array.find()` returns the value of the first element in the array that satisfies the provided testing function. Otherwise `undefined` is returned.
 
@@ -252,7 +252,7 @@ As we mentioned, it will return the **first element** that matches our condition
 
 &nbsp;
 
-### Array.findIndex();
+### `Array.findIndex()`
 
 `Array.findIndex()` will return the *index* of the element that matches our condition.
 
@@ -268,7 +268,7 @@ Again, only the index of the **first element** that matches our condition is ret
 
 &nbsp;
 
-### Array.some() & Array.every()
+### `Array.some()` & `Array.every()`
 
 I'm grouping these two together because their use is self-explanatory: `.some()` will search if there are some items matching the condition and
 stop once it finds the first one, `.every()` will check that all items match the given condition.

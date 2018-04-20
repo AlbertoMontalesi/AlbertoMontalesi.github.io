@@ -30,6 +30,7 @@ const greeting = `hello my name is ${name}`;
 let name  = "Alberto";
 ```
 
+&nbsp;
 
 ### Expression interpolations
 
@@ -173,7 +174,7 @@ The first thing we get is an array of strings, which are  all the content in bet
 
 The second thing we get are all the arguments that we interpolated.  If you don't know how many arguments are there you need to use the rest operator (more on this in a next chapter).
 
-As the name implies the `rest operator` (the three dots) will just take whatever is left after our first parameter strings and put it into an array.
+As the name implies the *rest operator* (the three dots) will just take whatever is left after our first parameter strings and put it into an array.
 
 What we have now are two arrays, one of strings and one of values.
 
@@ -226,10 +227,10 @@ To learn more about use cases of *template literals* check out [this article](ht
 
 We are going to cover 4 new strings method:
 
-- startsWith()
-- endsWith()
-- includes()
-- repeat()
+- `startsWith()`
+- `endsWith()`
+- `includes()`
+- `repeat()`
 
 ### `startsWith()`
 
@@ -257,7 +258,7 @@ code.startsWith("DEF",3);
 ```
 &nbsp;
 
-###` endsWith()`
+### `endsWith()`
 
 Similarly to `startsWith()` this new method will check if the string ends with the value we pass in:
 

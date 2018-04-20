@@ -9,13 +9,13 @@ tags:
 
 ![ES6-card-1](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-1.jpg)
 
-With the introduction of `let` and ``const in **ES6** we can know better define our variable depending on our needs. Let's have a look at the major differences between them.
+With the introduction of `let` and `const` in **ES6** we can know better define our variable depending on our needs. Let's have a look at the major differences between them.
 
 &nbsp;
 
 ## `Var`
 
-``var`` are **function scoped**, which means that if we declare them inside a **for loop** (which is a **block** scope) they will be available globally.
+``var`` are **function scoped**, which means that if we declare them inside a `for` loop (which is a **block** scope) they will be available globally.
 
 ``` javascript 
 for (var i = 0; i < 10; i++) {
@@ -69,7 +69,7 @@ This **does not** mean that **const are immutable**.
 
 &nbsp;
 
-### The content of a `Const` is an Object
+### The content of a `const` is an Object
 
 ``` javascript
 const person = {

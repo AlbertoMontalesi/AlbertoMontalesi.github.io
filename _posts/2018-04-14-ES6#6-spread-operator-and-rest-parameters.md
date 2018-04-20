@@ -118,6 +118,7 @@ greet(...name);
 
 We provided 3 values inside our array but only have 2 arguments in our function therefore the last one is left out.
 
+&nbsp;
 
 ### Spread in Object Literals (ES 2018/ ES9)
 

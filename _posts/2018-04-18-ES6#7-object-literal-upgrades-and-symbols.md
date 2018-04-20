@@ -119,7 +119,7 @@ console.log(person.name);
 
 ## Symbols
 
-ES6 added a new type of primitive called `Symbols`. What are they? And what do they do?
+ES6 added a new type of primitive called **Symbols**. What are they? And what do they do?
 
 Symbols are **always unique** and we can use them as identifiers for object properties.
 

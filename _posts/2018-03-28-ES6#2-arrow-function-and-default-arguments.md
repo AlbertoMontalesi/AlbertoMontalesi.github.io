@@ -14,7 +14,7 @@ tags:
 
 ## What is an arrow function
 
-ES6 introduced fat arrows (=>) as a way to declare functions.
+ES6 introduced fat arrows (`=>`) as a way to declare functions.
 This is how we would normally declare a function in ES5:
 
 ``` javascript
@@ -58,7 +58,7 @@ With arrow functions we can skip the explicit return and return like this:
 const greeting = (name) => `hello ${name}` ;
 ```
 
-Let's say we want to implicitly return an `object literal`, we would do like this:
+Let's say we want to implicitly return an **object literal**, we would do like this:
 
 ``` javascript
 const race = "100m dash";
@@ -68,7 +68,7 @@ const winner = runners.map(( runner, i) =>  ({ name: runner, race, place: i +1})
 
 ```
 
-To tell JavaScript that what's inside the curly braces is an `object literal` that we want to implicitly return we need to wrap everything inside parenthesis.
+To tell JavaScript that what's inside the curly braces is an **object literal** that we want to implicitly return we need to wrap everything inside parenthesis.
 
 Writing `race` or `race:race` is the same.
 
@@ -85,7 +85,9 @@ const greeting = (name) => `hello ${name}`;
 
 greeting("Tom");
 ```
+
 ---
+
 &nbsp;
 
 ## Arrow function and the `this` keyword
@@ -112,7 +114,7 @@ box.addEventListener("click",function() {
 ```
 
 
-The problem in this case is that the first `this` is bound to the `const box` but the second one, inside the `setTimeout` will be set to the `Window object`, trowing this error:
+The problem in this case is that the first `this` is bound to the `const box` but the second one, inside the `setTimeout` will be set to the Window object, trowing this error:
 
 ``` javascript
 Uncaught TypeError: cannot read property "toggle" of undefined 

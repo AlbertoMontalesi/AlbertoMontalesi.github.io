@@ -19,6 +19,7 @@ Let's start with **destructuring objects** first.
 
 
 &nbsp;
+
 ## Destructuring Objects
 
 To create variables from an object we used to do this:
@@ -103,7 +104,7 @@ console.log(name,surname);
 // Alberto Montalesi
 ```
 
-Let's say we want to grab all the other values remaining, we can use the `rest operator`:
+Let's say we want to grab all the other values remaining, we can use the **rest operator**:
 
 
 ```js
