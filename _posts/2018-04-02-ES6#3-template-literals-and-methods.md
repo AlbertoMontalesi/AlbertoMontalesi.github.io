@@ -173,7 +173,7 @@ The first thing we get is an array of strings, which are  all the content in bet
 
 The second thing we get are all the arguments that we interpolated.  If you don't know how many arguments are there you need to use the rest operator (more on this in a next chapter).
 
-As the name implies the rest operator (the three dots) will just take whatever is left after our first parameter strings and put it into an array.
+As the name implies the `rest operator` (the three dots) will just take whatever is left after our first parameter strings and put it into an array.
 
 What we have now are two arrays, one of strings and one of values.
 
@@ -206,7 +206,7 @@ str += string + (values[i] || '') ;
 
 We would have gotten
 
-```js 
+```js +
 "Hello, my name is Alberto and I am 25 years oldundefined"
 ```
 
@@ -225,12 +225,13 @@ To learn more about use cases of *template literals* check out [this article](ht
 ## Additional string methods
 
 We are going to cover 4 new strings method:
+
 - startsWith()
 - endsWith()
 - includes()
 - repeat()
 
-### startsWith()
+### `startsWith()`
 
 This new method will check if the string starts with the value we pass in:
 
@@ -254,11 +255,11 @@ const code = "ABCDEFGHI"
 code.startsWith("DEF",3);
 // true, it will begin checking after 3 characters
 ```
-&nbsp; 
+&nbsp;
 
-### endsWith()
+###` endsWith()`
 
-Similarly to **startsWith()** this new method will check if the string ends with the value we pass in:
+Similarly to `startsWith()` this new method will check if the string ends with the value we pass in:
 
 ```js
 const code = "ABCDEF";
@@ -272,7 +273,7 @@ code.endsWith("DEF");
 
 ```
 
-We can pass an additional parameter, which is the number of digits we want to consider when checking the ending. 
+We can pass an additional parameter, which is the number of digits we want to consider when checking the ending.
 
 ``` js
 const code = "ABCDEFGHI"
@@ -284,7 +285,7 @@ code.endsWith("EF", 6);
 &nbsp;
 
 
-### includes()
+### `includes()`
 
 This method will check if our string includes the value we pass in.
 
@@ -301,7 +302,7 @@ code.includes("CDE");
 
 &nbsp;
 
-### repeat()
+### `repeat()`
 
 As the name suggests, this new method will repeat what we pass in.
 

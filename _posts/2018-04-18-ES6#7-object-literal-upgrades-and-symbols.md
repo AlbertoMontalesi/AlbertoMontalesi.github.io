@@ -60,7 +60,7 @@ const person = {
 }
 
 ```
-If we wanted to add a function to our Object we had to use the the *function* keyword. In ES6 it got easier, look here:
+If we wanted to add a function to our Object we had to use the the `function` keyword. In ES6 it got easier, look here:
 
 ``` js
 const person = {
@@ -71,7 +71,7 @@ const person = {
 }
 ```
 
-No more *function*, it's shorter and it does the same.
+No more `function`, it's shorter and it does the same.
 
 **Remember** that **arrow functions**, look at this example:
 
@@ -87,6 +87,7 @@ const person = {
 ```
 
 &nbsp;
+
 ##  Dynamically define properties of an Object
 
 This is how we would dynamically define properties of an Object in ES5:
@@ -118,11 +119,11 @@ console.log(person.name);
 
 ## Symbols
 
-ES6 added a new type of primitive called *Symbols*. What are they? And what do they do?
+ES6 added a new type of primitive called `Symbols`. What are they? And what do they do?
 
 Symbols are **always unique** and we can use them as identifiers for object properties.
 
-Let's create a Symbol together:
+Let's create a `Symbol` together:
 
 ``` js
 const me = Symbol("Alberto");
@@ -164,6 +165,7 @@ for (person in office){
 // Tom
 // Mark
 ```
+
 Here we have our office object with 3 people, two of which share the same name, a common situation.
 To avoid naming collisions we can use symbols.
 
@@ -180,9 +182,9 @@ for(person in office) {
 // undefined
 ```
 
-We got undefined when we tried to loop over the symbols because they are **not enumerable** so we can't loop over them with a **for...in**.
+We got undefined when we tried to loop over the symbols because they are **not enumerable** so we can't loop over them with a `for in`.
 
-If we want to retrieve their object properties we can use **Object.getOwnPropertySymbols()**.
+If we want to retrieve their object properties we can use `Object.getOwnPropertySymbols()`.
 
 ``` js
 const office = {
@@ -200,7 +202,7 @@ console.log(symbols);
 ​// __proto__: Array []
 ```
 
-We retrieved the array but to be able to access the properties we to use **map**.
+We retrieved the array but to be able to access the properties we to use `map`.
 
 ```js
 const symbols = Object.getOwnPropertySymbols(office);

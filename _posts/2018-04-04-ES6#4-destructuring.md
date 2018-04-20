@@ -44,7 +44,7 @@ const person = {
 const { first, last } = person;
 ``` 
 
-Since our **const** have the same name as the properties we want to grab, we don't have to specify **person.first** and **person.last** anymore.
+Since our `const` have the same name as the properties we want to grab, we don't have to specify `person.first` and `person.last` anymore.
 
 The same applies even when we have nested data, such as what we could get from an API.
 
@@ -85,8 +85,7 @@ const { facebook:fb = "https://www.facebook.com"} = person.links.social;
 
 ## Destructuring Arrays
 
-The first difference we notice when **destructuring arrays** is that we are going to use **[]** and not **{}**.
-
+The first difference we notice when **destructuring arrays** is that we are going to use `[]` and not `{}`.
 
 ```js
 const person = ["Alberto","Montalesi",25];
@@ -104,7 +103,7 @@ console.log(name,surname);
 // Alberto Montalesi
 ```
 
-Let's say we want to grab all the other values remaining, we can use the **rest operator**:
+Let's say we want to grab all the other values remaining, we can use the `rest operator`:
 
 
 ```js
@@ -120,7 +119,7 @@ console.log(food);
 
 ## Swapping variables with destructuring
 
-The destructuring assignment makes it **extremely easy** to swap variables, just look at this exampl:
+The destructuring assignment makes it **extremely easy** to swap variables, just look at this example:
 
 
 ```js

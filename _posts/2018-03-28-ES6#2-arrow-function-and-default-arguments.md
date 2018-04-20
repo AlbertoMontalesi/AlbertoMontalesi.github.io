@@ -11,6 +11,7 @@ tags:
 ![ES6-card-2](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-2.jpg)
 
 &nbsp;
+
 ## What is an arrow function
 
 ES6 introduced fat arrows (=>) as a way to declare functions.
@@ -48,6 +49,7 @@ const greeting = () => {
 ```
 ---
 &nbsp;
+
 ## Implicitly return
 
 With arrow functions we can skip the explicit return and return like this:
@@ -56,7 +58,7 @@ With arrow functions we can skip the explicit return and return like this:
 const greeting = (name) => `hello ${name}` ;
 ```
 
-Let's say we want to implicitly return an **object literal**, we would do like this:
+Let's say we want to implicitly return an `object literal`, we would do like this:
 
 ``` javascript
 const race = "100m dash";
@@ -66,9 +68,11 @@ const winner = runners.map(( runner, i) =>  ({ name: runner, race, place: i +1})
 
 ```
 
-To tell JavaScript that what's inside the curly braces is an object literal that we want to implicitly return we need to wrap everything inside parenthesis.
+To tell JavaScript that what's inside the curly braces is an `object literal` that we want to implicitly return we need to wrap everything inside parenthesis.
 
-Writing race or race:race is the same.
+Writing `race` or `race:race` is the same.
+
+&nbsp;
 
 ## Arrow functions are anonymous
 
@@ -83,11 +87,12 @@ greeting("Tom");
 ```
 ---
 &nbsp;
-## Arrow function and the **this** keyword
+
+## Arrow function and the `this` keyword
 
 You need to be careful when using arrow functions in conjunction with the this keyword as they behave differently from normal functions.
 
-When you use an arrow function, the this keyword is inherited from the parent scope.
+When you use an arrow function, the `this` keyword is inherited from the parent scope.
 
 This can be useful in cases like this one:
 
@@ -107,11 +112,12 @@ box.addEventListener("click",function() {
 ```
 
 
-The problem in this case is that the first **this** is bound to the **const box** but the second one, inside the **setTimeout** will be set to the window object, trowing this error:
+The problem in this case is that the first `this` is bound to the `const box` but the second one, inside the `setTimeout` will be set to the `Window object`, trowing this error:
 
 ``` javascript
 Uncaught TypeError: cannot read property "toggle" of undefined 
 ```
+
 Since we know that **arrow functions** inherit the value of this from the parent scope, we can re-write our function like this:
 
 ``` javascript
@@ -129,15 +135,16 @@ box.addEventListener("click",function() {
 })
 ```
 
-Here, the second **this** will inherit from its parent, and will be therefore set to the **const box**.
+Here, the second `this` will inherit from its parent, and will be therefore set to the `const box`.
 
 ---
 &nbsp;
+
 ## When you should avoid arrow functions
 
-Using what we know about the inheritance of the **this keyword** we can define some instances where you should **not** use arrow functions.
+Using what we know about the inheritance of the `this` keyword*we can define some instances where you should **not** use arrow functions.
 
-The next 2 examples all show when to be careful using **this** inside of arrows.
+The next 2 examples all show when to be careful using `this` inside of arrows.
 
 ``` javascript
 const button = document.querySelector("btn");
@@ -175,10 +182,11 @@ This code will return:
 ReferenceError: arguments is not defined
 ```
 
-We don't have access to the *arguments object* in arrow functions, we need to use a normal function.
+We don't have access to the `arguments` object in arrow functions, we need to use a normal function.
 
 ---
 &nbsp;
+
 ## Default function arguments
 
 ES6 makes it very easy to set default function arguments. Let's look at an example:

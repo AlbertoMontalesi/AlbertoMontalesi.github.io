@@ -26,7 +26,7 @@ console.log(menu);
 // Array [ "tomato", "cucumber", "beans", "pasta", "pork", "beef", "chicken" ]
 ```
 
-The "..." is the spread syntax, and it allowed us to grab all the individual values of the arrays veggie and meat and put them inside the array menu and at the same time add a new item in between them.
+The `...` is the spread syntax, and it allowed us to grab all the individual values of the arrays veggie and meat and put them inside the array menu and at the same time add a new item in between them.
 
 &nbsp;
 ### Copy arrays
@@ -86,7 +86,7 @@ console.log(args);
 // Array [ 0, 1, 2 ]
 ```
 
-We can replace the ".apply()" syntax and just use the spread operator.
+We can replace the `.apply()` syntax and just use the spread operator.
 
 Let's look at another example:
 
@@ -142,7 +142,7 @@ console.log(clone);
 
 ## The Rest parameter
 
-The rest syntax looks exactly the same as the spread, 3 dots "..." but it is quite the opposite of it. Spread expands an array, while rest condenses multiple elements into a single one.
+The rest syntax looks exactly the same as the spread, 3 dots `...` but it is quite the opposite of it. Spread expands an array, while rest condenses multiple elements into a single one.
 
 ```js
 
@@ -152,9 +152,8 @@ const [first,second,...losers] = runners;
 console.log(...losers);
 // Mark Luke
 ```
+
 We stored the first two values inside the const first and second and whatever was left we put it inside losers using the rest parameter.
-
-
 
 ---
 &nbsp;
