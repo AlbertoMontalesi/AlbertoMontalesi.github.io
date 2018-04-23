@@ -85,9 +85,25 @@ for(const person of family) {
 // Son
 ```
 
+We can use a `Set` to remove duplicates from an Array since we know it can only hold unique values.
+
+```js
+const myArray = ["dad", "mom", "son", "dad", "mom", "daughter"];
+
+const set = new Set(myArray);
+console.log(set);
+// Set [ "dad", "mom", "son", "daughter" ]
+// transform the `Set` into an Array
+const uniqueArray = Array.from(set);
+console.log(uniqueArray);
+// Array [ "dad", "mom", "son", "daughter" ]
+```
+
+As you can see the new array only contains the unique values from the original array.
+
 &nbsp;
 
-## What is a `WeakSet`?
+## What is a `WeakSet` ?
 
 A `WeakSet` is similar to a `Set` but it can **only** contain Objects.
 
@@ -109,22 +125,81 @@ Another big difference that we can see is by trying to use `.clear` on a `WeakSe
 
 ```js
 dad = null;
+family;
+// WeakSet {{…}, {…}}
 
 // wait a few seconds
-
-
-//example of garbage collectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
-
+family
+// WeakSet {{…}}
 ```
+
+As you can see after a few seconds **dad** was removed and *garbage collected*. That happened because the reference to it was lost when we set the value to `null`.
+
+If you try to replicate it in your browser you may seem that it does not get *garbage collected*, try to use Chrome in incognito mode, it worked for me.
+
 
 &nbsp;
 
 ## What is a `Map`?
 
+A `Map` is similar to a `Set` but they have key and value pairs.
+
+```js
+const family = new Map();
+
+family.set("Dad", 40);
+family.set("Mom", 50);
+family.set("Son", 20);
+
+family;
+// Map { Dad → 40, Mom → 50, Son → 20 }
+family.size;
+// 3
+
+family.forEach((key,val) => console.log(val,key));
+// Dad 40 
+// Mom 50
+// Son 20
+
+for(const [key,val] of family){
+  console.log(key,val);
+}
+// Dad 40 
+// Mom 50
+// Son 20
+```
+
+If you remember, we could iterate over a `Set` only with a `for of` loop while we can iterate over a `Map` with both a `for of` and a `forEach` loop.
+
 
 &nbsp;
 
-## What is a `WeakMap`?
+## What is a `WeakMap` ?
+
+A `WeakMap` is a collection of key/value pairs and similarly to a `WeakSet`, even in a `WeakMap` the keys are *weakly* referenced, which means that when the reference is lost the value will be removed from the `WeakMap`.
+
+A `WeakMap` is **not** enumerable therefore we cannot loop over it.
+
+```js
+let dad = { name: "Daddy" };
+let mom = { name: "Mommy" };
+
+const myMap = new Map();
+const myWeakMap = new WeakMap();
+
+myMap.set(dad);
+myWeakMap.set(mom);
+
+dad = null;
+mom = null; 
+
+myMap;
+// Map(1) {{…}
+myWeakMap;
+// WeakMap {}
+```
+
+As you can see *mom* was garbage collected after we set the its value to `null` whilst *dad* still remains inside our `Map`.
 
 
 ---
