@@ -116,16 +116,8 @@ As you can see the new array only contains the unique values from the original a
 
 A `WeakSet` is similar to a `Set` but it can **only** contain Objects.
 
-``` js
-let dad = {name: "Daddy", age: 50};
-let mom = {name: "Mummy", age: 45};
-
-const family = new WeakSet([dad,mom]);
-
-for(const person of family){
-  console.log(person);
-}
-// TypeError: family is not iterable
+```js
+example goes here
 ```
 
 We created our new `WeakSet` but when we tried to use a `for of` loop it did not work, we can't iterate over a `WeakSet`.
