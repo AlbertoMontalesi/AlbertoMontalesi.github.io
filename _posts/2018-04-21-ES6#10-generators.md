@@ -51,7 +51,7 @@ Our function is paused between each `.next()` call.
 
 &nbsp;
 
-### Looping over an array with a generator
+## Looping over an array with a generator
 
 We can use the `for of` loop to iterate over our generator and `yield` the content at each loop.
 
@@ -81,7 +81,7 @@ fruitGenerator.next().value;
 
 &nbsp;
 
-### Finish the generator with `.return()`
+## Finish the generator with `.return()`
 
 Using `.return()` we can return a given value and finish the generator.
 
@@ -102,7 +102,7 @@ In this case we got `value: undefined` because we did not pass anything in the `
 
 &nbsp;
 
-### Catching errors with `.throw()`
+## Catching errors with `.throw()`
 
 
 ``` js
@@ -152,7 +152,6 @@ function* gen() {
   let result = "";
   // returns promise
   yield myPromise().then(data => { result = data }) ;
-  console.log(result);
   // wait for the promise and use its value
   yield result + ' 2';
 };

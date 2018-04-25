@@ -42,11 +42,15 @@ const person = {
   age,
   nationality,
 }
+console.log(person);
+// {name: "Alberto", surname: "Montalesi", age: 25, nationality: "Italian"}
 ```
-As our constant is named the same way as the value we are using we can reduce our typing by a lot.
+
+As our `const` is named the same way as the properties we are using we can reduce our typing by a lot.
 
 
 &nbsp;
+
 ## Add functions to our Objects
 
 Let's looks at an example from ES5:
@@ -58,8 +62,8 @@ const person = {
     console.log("Hello");
   },
 }
-
 ```
+
 If we wanted to add a function to our Object we had to use the the `function` keyword. In ES6 it got easier, look here:
 
 ``` js
@@ -69,20 +73,23 @@ const person = {
     console.log("Hello");
   },
 }
+
+person.greet();
+// Hello;
 ```
 
 No more `function`, it's shorter and it does the same.
 
-**Remember** that **arrow functions**, look at this example:
+**Remember** that **arrow functions** are anonymous, look at this example:
 
 ``` js
 // arrow functions are anonymous, in this case you need to have a key
-const person = {
-  ()=> console.log("Hello"),
-}
+const person1 = {
+  () => console.log("Hello"),
+};
 
-const person = {
-  greet: ()=> console.log("Hello"),
+const person2 = {
+  greet: () => console.log("Hello"),
 }
 ```
 
@@ -112,7 +119,7 @@ const person = {
   [name]:"Alberto",
 };
 console.log(person.name);
-
+// Alberto
 ```
 
 &nbsp;
@@ -191,7 +198,7 @@ const office = {
   [Symbol("Tom")] : "CEO",
   [Symbol("Mark")] : "CTO",
   [Symbol("Mark")] : "CIO",
-}
+};
 
 const symbols = Object.getOwnPropertySymbols(office);
 console.log(symbols);
@@ -199,7 +206,6 @@ console.log(symbols);
 ​// 1: Symbol(Mark)
 ​// 2: Symbol(Mark)
 ​// length: 3
-​// __proto__: Array []
 ```
 
 We retrieved the array but to be able to access the properties we to use `map`.
@@ -212,7 +218,6 @@ console.log(value);
 ​// 1: "CTO"
 ​// 2: "CIO"
 ​// length: 3
-​// __proto__: Array []
 ```
 
 Now we finally got the array containing all the values of our symbols.
