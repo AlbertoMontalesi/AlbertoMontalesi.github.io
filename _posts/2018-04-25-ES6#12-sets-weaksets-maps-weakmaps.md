@@ -134,7 +134,13 @@ We created our new `WeakSet` but when we tried to use a `for of` loop it did not
 Another big difference that we can see is by trying to use `.clear` on a `WeakSet`: nothing will happen because a `WeakSet` cleans itself up after we delete an element from it.
 
 ```js
-example
+dad = null;
+family;
+// WeakSet [ {…}, {…} ]
+
+// wait a few seconds
+family;
+// WeakSet [ {…} ]
 ```
 
 As you can see after a few seconds **dad** was removed and *garbage collected*. That happened because the reference to it was lost when we set the value to `null`.
