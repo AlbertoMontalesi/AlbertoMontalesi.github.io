@@ -165,14 +165,14 @@ family.size;
 // 3
 
 family.forEach((key,val) => console.log(val,key));
-// Dad 40 
+// Dad 40
 // Mom 50
 // Son 20
 
 for(const [key,val] of family){
   console.log(key,val);
 }
-// Dad 40 
+// Dad 40
 // Mom 50
 // Son 20
 ```
@@ -199,7 +199,7 @@ myMap.set(dad);
 myWeakMap.set(mom);
 
 dad = null;
-mom = null; 
+mom = null;
 
 myMap;
 // Map(1) {{…}}
