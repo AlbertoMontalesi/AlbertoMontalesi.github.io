@@ -12,7 +12,6 @@ tags:
 
 MDN defines **destructuring** like this:
 
-
 > The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 Let's start with **destructuring objects** first.
@@ -115,7 +114,7 @@ console.log(food);
 // Array [ "pizza", "ice cream", "cheese cake" ]
 ```
 
----
+
 &nbsp;
 
 ## Swapping variables with destructuring
@@ -135,9 +134,6 @@ console.log(hungry,full);
 
 It can't get easier than this to swap values.
 
-
----
-
 &nbsp;
 
 ## Destructuring functions
@@ -151,8 +147,6 @@ function totalBill({ total, tax = 0.1 }) {
 // we are also overriding the default value we set for the tax
 const bill = totalBill({ tax: 0.15, total: 150});
 ```
-
-
 
 ---
 

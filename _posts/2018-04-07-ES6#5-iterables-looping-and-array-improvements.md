@@ -44,10 +44,12 @@ for(const fruit of fruits){
 // orange
 ```
 
+&nbsp;
+
 ### Iterating over an object
 
 Objects are **non iterable** so how do we iterate over them?
-We have to first grab all the values of the object using something like `Object.keys()` or the new ES6 `Object.entries()` (more on that in a later article).
+We have to first grab all the values of the object using something like `Object.keys()` or the new ES6 `Object.entries()`.
 
 
 ```js
@@ -56,6 +58,7 @@ const car = {
   color: "red",
   year : "2010",
 }
+
 for (const prop of Object.keys(car)){
   const value = car[prop];
   console.log(value,prop);
@@ -70,7 +73,7 @@ for (const prop of Object.keys(car)){
 
 ## The `for in` loop
 
-Even though it is not a new ES6 loop, let's look at the `for in` loop to understand what differentiate it compared to the `for of. 
+Even though it is not a new ES6 loop, let's look at the `for in` loop to understand what differentiate it compared to the `for of.
 
 The `for in` loop is a bit different because it will iterate over all the [enumerable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) of an object in no particular order.
 
@@ -84,11 +87,11 @@ const car = {
   year : "2010",
 }
 for (const prop in car){
-  console.log(prop);
+  console.log(prop, car[prop]);
 }
-// maker
-// color
-//  year
+// maker BMW
+// color red
+// year 2010
 ```
 
 &nbsp;
@@ -166,14 +169,13 @@ for (const prop in fruit){
 It will take something **arrayish**, meaning something that looks like an array but it isn't, and transform it into a real array.
 
 ``` js
+// our html
 <div class="fruits">
   <p> Apple </p>
   <p> Banana </p>
-  <p> Orange <p>
+  <p> Orange </p>
 </div>
-```
 
-``` js
 const fruits = document.querySelectorAll(".fruits p");
 const fruitArray = Array.from(fruits);
 
@@ -282,7 +284,7 @@ console.log(arraySome);
 
 let arrayEvery = array.every(e => e > 2);
 console.log(arrayEvery);
-// false 
+// false
 ```
 
 Simply put, the first condition is true, because there are **some** elements greater than 2, but the second is false because **not every element** is greater than 2.
