@@ -14,25 +14,31 @@ Prior to ES6 they were called *template strings*, now we call them  *template li
 
 &nbsp;
 
-### Interpolating strings
+## Interpolating strings
 
 In ES5 we used to write this, in order to interpolate strings:
 
 ``` javascript
-var greeting = 'Hello my name is' + name;
 var name = "Alberto";
+var greeting = 'Hello my name is ' + name;
+
+console.log(greeting);
+// Hello my name is Alberto
 ```
 
 In ES6 we can use backticks to make our life easier.
 
 ``` javascript
-const greeting = `hello my name is ${name}`;
 let name  = "Alberto";
+const greeting = `Hello my name is ${name}`;
+
+console.log(greeting);
+// Hello my name is Alberto
 ```
 
 &nbsp;
 
-### Expression interpolations
+## Expression interpolations
 
 In ES5 we used to write this:
 
@@ -55,13 +61,13 @@ console.log(`1 * 10 is ${a * b}`);
 
 &nbsp;
 
-###  Create HTML fragments
+## Create HTML fragments
 
 In ES5 we used to do this to write multi-line strings: 
 
 ``` javascript
 // We have to include a backslash on each line
-var text = " hello, \
+var text = "hello, \
 my name is Alberto \
 how are you?\ "
 ```
@@ -69,16 +75,16 @@ how are you?\ "
 In ES6 we simply have to wrap everything inside backticks, no more backslash on each line.
 
 ``` javascript 
-const content = ` hello,
+const content = `hello,
 my name is Alberto
 how are you?`;
 ```
 
 &nbsp;
 
-### Nesting templates 
+## Nesting templates
 
-It's very easy to nest a template inside another one, like this: 
+It's very easy to nest a template inside another one, like this:
 
 ``` js
 const markup = `
@@ -90,7 +96,7 @@ const markup = `
 
 &nbsp;
 
-###  Add a ternary operator
+## Add a ternary operator
 
 We can easily add some logic inside our template string by using a ternary operator:
 
@@ -99,21 +105,22 @@ We can easily add some logic inside our template string by using a ternary opera
 const artist = {
   name: "Bon Jovi",
   age: 56,
-}
+};
 
 // only if the artist object has a song property we then add it to our paragraph, otherwise we return nothing
 const text = `
   <div>
-    <p>  `${artist.name} is ${artist.age} years old ${artist.song ? ` and wrote the song ${artist.song}` : ' '}
+    <p>  ${artist.name} is ${artist.age} years old ${artist.song ? `and wrote the song ${artist.song}` : '' }
     </p>
   </div>
 `
 ```
+
 &nbsp;
 
-### Pass a function inside a template literal
+## Pass a function inside a template literal
 
-Similarly to the example above, if we want we can pass a function inside a template literal.
+Similarly to the example above, if we want to, we can pass a function inside a template literal.
 
 ``` js
 const groceries = {
@@ -142,8 +149,9 @@ const markup = `
   <div>
 `
 ```
+
 &nbsp;
-&nbsp;
+
 
 ## Tagged template literals
 
@@ -152,70 +160,28 @@ By tagging a function to a template literal we can run the template literal thro
 The way it works is very simple: you just take the name of your function and put it in front of the template that you want to run it against.
 
 
-``` js
-// our function will take an array of strings and an array of values, Here we use the **rest** operator to take all the values from our variable and put them in an array
-function myTag(strings, ...values){
-  // code goes here
+ ```js
+let person = "Alberto";
+let age = 25;
+
+function myTag(strings,personName,personAge){
+  let str = strings[1];
+  let ageStr;
+
+  personAge > 50 ? ageStr = "grandpa" : ageStr = "youngster";
+
+  return personName + str + ageStr;
 }
 
-
-const name = "Alberto";
-const age = "25";
-// we tag the function by putting its name in front of our string
-const sentence = myTag `Hello my name is ${name} and I am ${age} years old`;
-
+let sentence = myTag`${person} is a ${age}`;
+console.log(sentence);
+// Alberto is a youngster
 ```
 
-The first thing we get is an array of strings, which are  all the content in between each of our arguments.
-
-- Hello my name is
-- and I am
-- years old
-
-The second thing we get are all the arguments that we interpolated.  If you don't know how many arguments are there you need to use the rest operator (more on this in a next chapter).
-
-As the name implies the *rest operator* (the three dots) will just take whatever is left after our first parameter strings and put it into an array.
-
-What we have now are two arrays, one of strings and one of values.
-
-We can now build our own string by combining strings and values together.
-
-``` js
-function myTag(strings, ...values){
-  // create an empty variable
-  let str = ();
-  // for each string take its value and an index
-  strings.forEach(string, i => {
-  // add to the variable the value of the string and the content of values at the index of the string
-  // as our original string ends with a string it means that we have one more *string* than *value* so we add a simple **||** to check, if there is a value, add it, otherwise add nothing.
-    str += string + (values[i] || '') ;
-  });
-  return str;
-}
-
-const name = "Alberto";
-const age = "25";
-const sentence = myTag `Hello my name is ${name} and I am ${age} years old`;
-
-```
-
-If we did not add this line 
-
-``` js
-str += string + (values[i] || '') ;
-```
-
-We would have gotten
-
-```js +
-"Hello, my name is Alberto and I am 25 years oldundefined"
-```
+We captured the value of the variable age and used a ternary operator to decide what to print.
+`strings` will take all the strings of our `let` sentence whilst the other parameters will hold the variables.
 
 
-
---- 
-
-&nbsp;
 &nbsp;
 
 To learn more about use cases of *template literals* check out [this article](https://codeburst.io/javascript-es6-tagged-template-literals-a45c26e54761).
@@ -231,6 +197,8 @@ We are going to cover 4 new strings method:
 - `endsWith()`
 - `includes()`
 - `repeat()`
+
+&nbsp;
 
 ### `startsWith()`
 
@@ -256,6 +224,7 @@ const code = "ABCDEFGHI"
 code.startsWith("DEF",3);
 // true, it will begin checking after 3 characters
 ```
+
 &nbsp;
 
 ### `endsWith()`
@@ -284,7 +253,6 @@ code.endsWith("EF", 6);
 ```
 
 &nbsp;
-
 
 ### `includes()`
 

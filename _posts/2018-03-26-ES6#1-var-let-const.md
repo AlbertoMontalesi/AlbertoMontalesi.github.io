@@ -15,7 +15,7 @@ With the introduction of `let` and `const` in **ES6** we can know better define 
 
 ## `Var`
 
-``var`` are **function scoped**, which means that if we declare them inside a `for` loop (which is a **block** scope) they will be available globally.
+`var` are **function scoped**, which means that if we declare them inside a `for` loop (which is a **block** scope) they will be available globally.
 
 ``` javascript 
 for (var i = 0; i < 10; i++) {
@@ -23,17 +23,28 @@ for (var i = 0; i < 10; i++) {
 }
 
 console.log(global);
+// I am available globally
 
-// expected output: I am available globally
+function myFunc(){
+  var functionScoped = "I am available inside this function";
+  console.log(functionScoped);
+}
+myFunc();
+// I am available inside this function
+console.log(functionScoped);
+// ReferenceError: functionScoped is not defined
 ```
+
+In the first example the value of `var` global leaked out of the block-scope and could be accessed from the global scope whereas in the second example `var` was confined inside a function-scope and we could not access it from outside.
 
 &nbsp;
 
-## `Let` 
+## `Let`
 
 `let` (and `const` are **block scoped** meaning that they will be available only inside of the block where they are declared and its sub-blocks.
 
 ``` javascript
+// using `let`
 let x = "global";
 
 if (x === "global") {
@@ -45,7 +56,22 @@ if (x === "global") {
 
 console.log(x);
 // expected output: global
+
+// using `var`
+var y = "global";
+
+if (y === "global") {
+  var  y= "block-scoped";
+
+  console.log(y);
+  // expected output: block-scoped
+}
+
+console.log(y);
+// expected output: block-scoped
 ```
+
+As you can see, when we assigned a new value to our `let` inside our block-scope it **did not** change the value in the global scope, wherease when did the same with our `var` it leaked outside of the block-scope and also change it in the global scope.
 
 &nbsp;
 
@@ -56,11 +82,9 @@ Similarly to `let`, `const` are **block-scoped** but they differ in the fact tha
 
 ``` javascript
 const constant = 'I am a constant';
-
 constant = " I can't be reassigned";
 
-// it will raise: Uncaught TypeError: Assignment
-// to constant variable
+// Uncaught TypeError: Assignment to constant variable
 ```
 
 
@@ -79,9 +103,7 @@ const person = {
 
 person.age = 26;
 
-// in this case no error will be raised, we are not
-// re-assigning the variable but just 
-// one of its properties.
+// in this case no error will be raised, we are not re-assigning the variable but just one of its properties.
 ``` 
 
 ---
@@ -89,7 +111,7 @@ person.age = 26;
 
 ## The temporal dead zone
 
-According to **MDN** the definition of the temporal dead zone is:
+According to **MDN**:
 
 > In ECMAScript 2015, let bindings are not subject to **Variable Hoisting**, which means that let declarations do not move to the top of the current execution context. Referencing the variable in the block before the initialization results in a ReferenceError (contrary to a variable declared with var, which will just have the undefined value). The variable is in a “temporal dead zone” from the start of the block until the initialization is processed.
 
@@ -104,8 +126,7 @@ var i = "I am a variable";
 console.log(j);
 let j = "I am a let";
 
-// expected output: ReferenceError: can't access 
-// lexical declaration `j' before initialization
+// expected output: ReferenceError: can't access lexical declaration `j' before initialization
 ```
 
 `var` can be accessed **before** they are defined, but we can't access their **value**.

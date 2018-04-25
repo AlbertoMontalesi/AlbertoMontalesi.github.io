@@ -29,7 +29,6 @@ The new syntax with a fat arrow looks like this:
 const greeting = (name) => {
   return `hello ${name}`;
 }
-
 ```
 
 But we can go further, if we only have one parameter we can drop the parenthesis and write:
@@ -47,7 +46,8 @@ const greeting = () => {
   return "hello";
 }
 ```
----
+
+
 &nbsp;
 
 ## Implicitly return
@@ -64,7 +64,12 @@ Let's say we want to implicitly return an **object literal**, we would do like t
 const race = "100m dash";
 const runners = [ "Usain Bolt", "Justin Gatlin", "Asafa Powell" ];
 
-const winner = runners.map(( runner, i) =>  ({ name: runner, race, place: i +1})));
+const winner = runners.map(( runner, i) =>  ({ name: runner, race, place: i + 1}));
+
+console.log(winner);
+// 0: {name: "Usain Bolt", race: "100m dash", place: 1}
+// 1: {name: "Justin Gatlin", race: "100m dash", place: 2}
+// 2: {name: "Asafa Powell", race: "100m dash", place: 3}
 
 ```
 
@@ -86,7 +91,7 @@ const greeting = (name) => `hello ${name}`;
 greeting("Tom");
 ```
 
----
+
 
 &nbsp;
 
@@ -106,15 +111,14 @@ box.addEventListener("click",function() {
   // toggle the class opening on the div
   this.classList.toggle("opening");
   setTimeout(function(){
-  // try to log our div and toggle again the class
-  console.log(this);
-  this.classList.toggle("open");
-  })
+    // try to toggle again the class
+    this.classList.toggle("open");
+    })
 })
 ```
 
 
-The problem in this case is that the first `this` is bound to the `const box` but the second one, inside the `setTimeout` will be set to the Window object, trowing this error:
+The problem in this case is that the first `this` is bound to the `const` box but the second one, inside the `setTimeout` will be set to the `Window` object, trowing this error:
 
 ``` javascript
 Uncaught TypeError: cannot read property "toggle" of undefined 
@@ -129,22 +133,21 @@ const box = document.querySelector(".box");
 box.addEventListener("click",function() {
   // toggle the class opening on the div
   this.classList.toggle("opening");
-  setTimeout(()=> {
-    // try to log our div and toggle again the class
-    console.log(this);
+  setTimeout(() => {
+    // try to  toggle again the class
     this.classList.toggle("open");
     })
 })
 ```
 
-Here, the second `this` will inherit from its parent, and will be therefore set to the `const box`.
+Here, the second `this` will inherit from its parent, and will be therefore set to the `const` box.
 
----
+
 &nbsp;
 
 ## When you should avoid arrow functions
 
-Using what we know about the inheritance of the `this` keyword*we can define some instances where you should **not** use arrow functions.
+Using what we know about the inheritance of the `this` keyword we can define some instances where you should **not** use arrow functions.
 
 The next 2 examples all show when to be careful using `this` inside of arrows.
 
@@ -169,7 +172,7 @@ const person = {
 Here's another example of when you should use a normal function instead of an arrow.
 
 ``` javascript
-const orderRunners = ()=> {
+const orderRunners = () => {
   const runners = Array.from(arguments);
   return runners.map((runner, i) => {
     return ` #{runner} was number #{i +1}`;
@@ -186,7 +189,7 @@ ReferenceError: arguments is not defined
 
 We don't have access to the `arguments` object in arrow functions, we need to use a normal function.
 
----
+
 &nbsp;
 
 ## Default function arguments
