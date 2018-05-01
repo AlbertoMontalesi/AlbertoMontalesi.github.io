@@ -9,7 +9,7 @@ tags:
 
 ![ES6-card-1](https://albertomontalesi.github.io/assets/images/ES6/ES6-card-1.jpg)
 
-With the introduction of `let` and `const` in **ES6** we can know better define our variable depending on our needs. Let's have a look at the major differences between them.
+With the introduction of `let` and `const` in **ES6**, we can now better define our variable depending on our needs. Let's have a look at the major differences between them.
 
 &nbsp;
 
@@ -35,13 +35,13 @@ console.log(functionScoped);
 // ReferenceError: functionScoped is not defined
 ```
 
-In the first example the value of `var` global leaked out of the block-scope and could be accessed from the global scope whereas in the second example `var` was confined inside a function-scope and we could not access it from outside.
+In the first example the value of the `var` global leaked out of the block-scope and could be accessed from the global scope, whereas in the second example `var` was confined inside a function-scope and we could not access it from outside.
 
 &nbsp;
 
 ## `Let`
 
-`let` (and `const` are **block scoped** meaning that they will be available only inside of the block where they are declared and its sub-blocks.
+`let` (and `const`) are **block scoped**, meaning that they will be available only inside of the block where they are declared and its sub-blocks.
 
 ``` javascript
 // using `let`
@@ -71,13 +71,13 @@ console.log(y);
 // expected output: block-scoped
 ```
 
-As you can see, when we assigned a new value to our `let` inside our block-scope it **did not** change the value in the global scope, wherease when did the same with our `var` it leaked outside of the block-scope and also change it in the global scope.
+As you can see, when we assigned a new value to our `let` inside our block-scope, it **did not** change its value in the global scope, whereas when did the same with our `var` it leaked outside of the block-scope and also changed it in the global scope.
 
 &nbsp;
 
 ## `Const`
 
-Similarly to `let`, `const` are **block-scoped** but they differ in the fact that their value **can't change through re-assignment or can't be  redeclared**.
+Similarly to `let`, `const` are **block-scoped**, but they differ in the fact that their value **can't change through re-assignment or can't be  redeclared**.
 
 
 ``` javascript
@@ -132,7 +132,7 @@ let j = "I am a let";
 `var` can be accessed **before** they are defined, but we can't access their **value**.
 `let` and `const` can't be accessed **before we define them**.
 
-This happens because `var` are subject to **hoisting** which means that they are processed before any code is executed. Declaring a `var` anywhere is equivalent to **declaring it at the top**. This is why we can still access the `var` but we can't yet see its content, hence the `undefined` result.
+This happens because `var` are subject to **hoisting**, which means that they are processed before any code is executed. Declaring a `var` anywhere is equivalent to **declaring it at the top**. This is why we can still access the `var` but we can't yet see its content, hence the `undefined` result.
 
 
 ---

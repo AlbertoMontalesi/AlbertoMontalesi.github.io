@@ -155,7 +155,7 @@ console.log(me === clone);
 // false
 ```
 
-They both have the same value but we will never have naming collisions with Symbols as they are always unique.
+They both have the same value, but we will never have naming collisions with Symbols as they are always unique.
 
 As we mentioned earlier we can use them to create as identifiers for object properties, so let's see an example:
 
@@ -173,7 +173,7 @@ for (person in office){
 // Mark
 ```
 
-Here we have our office object with 3 people, two of which share the same name, a common situation.
+Here we have our office object with 3 people, two of which share the same name.
 To avoid naming collisions we can use symbols.
 
 ``` js

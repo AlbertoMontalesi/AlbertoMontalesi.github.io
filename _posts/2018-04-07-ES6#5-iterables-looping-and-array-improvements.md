@@ -155,7 +155,6 @@ for (const prop in fruit){
 // banana
 // orange
 // gnam gnam
-
 ```
 
 &nbsp;

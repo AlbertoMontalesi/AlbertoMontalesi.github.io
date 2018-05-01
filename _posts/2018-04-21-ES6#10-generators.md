@@ -13,7 +13,7 @@ tags:
 
 ## What is a Generator ?
 
-A generator function is a function that we can start and stop, for an indefinite amount of time and restart, with the possibility of passing additional data at a later point in time.
+A generator function is a function that we can start and stop, for an indefinite amount of time, and restart with the possibility of passing additional data at a later point in time.
 
 
 To create a generator function we write like this:
@@ -130,7 +130,6 @@ myGenerator.throw("ooops");
 As you can see when we called `.throw()` the `generator` returned us the error and  finished even though we still had one more `yield` to execute.
 
 &nbsp;
-
 
 
 ## Combining Generators with Promises

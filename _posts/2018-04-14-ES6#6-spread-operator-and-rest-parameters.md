@@ -49,7 +49,7 @@ console.log(newVeggie);
 // Array [ "tomato", "cucumber", "beans", "peas" ]
 ```
 
-Our new array changed aswell, but why? Because we did not actually create a copy but we just referenced our old array in the new one.
+Our new array also changed, but why? Because we did not actually create a copy but we just referenced our old array in the new one.
 This is how we would usually make a copy of an array in ES5 and earlier.
 
 ``` js
@@ -122,9 +122,9 @@ We provided 3 values inside our array but only have 2 arguments in our function 
 
 &nbsp;
 
-### Spread in Object Literals (ES 2018/ ES9)
+### Spread in Object Literals (ES 2018 / ES9)
 
-This feature is not part of ES6 but as we already discussing this topic, it is worth mentioning that ES9 will introduce the Spread operator for Objects. 
+This feature is not part of ES6, but as we are already discussing this topic, it is worth mentioning that ES9 will introduce the Spread operator for Objects. 
 Let's look at an example:
 
 ``` js

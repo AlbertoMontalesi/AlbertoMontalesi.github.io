@@ -63,7 +63,7 @@ console.log(`1 * 10 is ${a * b}`);
 
 ## Create HTML fragments
 
-In ES5 we used to do this to write multi-line strings: 
+In ES5 we used to do this to write multi-line strings:
 
 ``` javascript
 // We have to include a backslash on each line
@@ -72,7 +72,7 @@ my name is Alberto \
 how are you?\ "
 ```
 
-In ES6 we simply have to wrap everything inside backticks, no more backslash on each line.
+In ES6 we simply have to wrap everything inside backticks, no more backslashes on each line.
 
 ``` javascript 
 const content = `hello,

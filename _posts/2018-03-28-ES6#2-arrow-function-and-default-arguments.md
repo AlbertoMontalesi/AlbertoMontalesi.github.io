@@ -31,7 +31,7 @@ const greeting = (name) => {
 }
 ```
 
-But we can go further, if we only have one parameter we can drop the parenthesis and write:
+We can go further, if we only have one parameter we can drop the parenthesis and write:
 
 ``` javascript
 const greeting = name => {
@@ -39,7 +39,7 @@ const greeting = name => {
 }
 ```
 
-And if we have no parameter at all we need to write empty parenthesis like this:
+If we have no parameter at all we need to write empty parenthesis like this:
 
 ``` javascript
 const greeting = () => {
@@ -73,7 +73,7 @@ console.log(winner);
 
 ```
 
-To tell JavaScript that what's inside the curly braces is an **object literal** that we want to implicitly return we need to wrap everything inside parenthesis.
+To tell JavaScript that what's inside the curly braces is an **object literal** that we want to implicitly return, we need to wrap everything inside parenthesis.
 
 Writing `race` or `race:race` is the same.
 
@@ -92,12 +92,11 @@ greeting("Tom");
 ```
 
 
-
 &nbsp;
 
 ## Arrow function and the `this` keyword
 
-You need to be careful when using arrow functions in conjunction with the this keyword as they behave differently from normal functions.
+You need to be careful when using arrow functions in conjunction with the this keyword, as they behave differently from normal functions.
 
 When you use an arrow function, the `this` keyword is inherited from the parent scope.
 
@@ -118,13 +117,13 @@ box.addEventListener("click",function() {
 ```
 
 
-The problem in this case is that the first `this` is bound to the `const` box but the second one, inside the `setTimeout` will be set to the `Window` object, trowing this error:
+The problem in this case is that the first `this` is bound to the `const` box but the second one, inside the `setTimeout`, will be set to the `Window` object, trowing this error:
 
 ``` javascript
 Uncaught TypeError: cannot read property "toggle" of undefined 
 ```
 
-Since we know that **arrow functions** inherit the value of this from the parent scope, we can re-write our function like this:
+Since we know that **arrow functions** inherit the value of `this` from the parent scope, we can re-write our function like this:
 
 ``` javascript
 // grab our div with class box
