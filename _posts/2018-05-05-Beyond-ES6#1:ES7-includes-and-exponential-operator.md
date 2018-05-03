@@ -7,6 +7,8 @@ tags:
   - guide
 ---
 
+![beyond-es6-1](https://albertomontalesi.github.io/assets/images/BEYOND-ES6/beyond-es6-card-1.jpg)
+
 ## Everything new in ES7
 
 ES7 introduced only two new features :
