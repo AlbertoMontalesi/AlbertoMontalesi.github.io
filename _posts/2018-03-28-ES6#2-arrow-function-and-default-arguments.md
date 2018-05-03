@@ -1,8 +1,9 @@
 ---
 title: "JavaScript ES6 for Beginners #2: Arrow functions & default arguments"
 categories:
-  - ES6
+  - JavaScript
 tags:
+  - ES6
   - programming
   - guide
 ---

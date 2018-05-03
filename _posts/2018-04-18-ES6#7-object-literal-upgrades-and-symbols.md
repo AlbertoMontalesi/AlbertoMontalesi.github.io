@@ -1,8 +1,9 @@
 ---
 title: "JavaScript ES6 for Beginners #7: Object literal upgrades & symbols"
 categories:
-  - ES6
+  - JavaScript
 tags:
+  - ES6
   - programming
   - guide
 ---

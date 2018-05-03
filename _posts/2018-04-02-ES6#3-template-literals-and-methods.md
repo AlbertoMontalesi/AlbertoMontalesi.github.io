@@ -1,8 +1,9 @@
 ---
 title: "JavaScript ES6 for Beginners #3: Template literals & additional string methods"
 categories:
-  - ES6
+  - JavaScript
 tags:
+  - ES6
   - programming
   - guide
 ---

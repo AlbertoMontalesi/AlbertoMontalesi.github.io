@@ -1,8 +1,9 @@
 ---
 title: "JavaScript ES6 for Beginners #12: Sets, WeakSets, Maps and WeakMaps"
 categories:
-  - ES6
+  - JavaScript
 tags:
+  - ES6
   - programming
   - guide
 ---

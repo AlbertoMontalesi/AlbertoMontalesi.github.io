@@ -1,8 +1,9 @@
 ---
 title: "JavaScript ES6 for Beginners #6: Spread operator and Rest parameters"
 categories:
-  - ES6
+  - JavaScript
 tags:
+  - ES6
   - programming
   - guide
 ---
