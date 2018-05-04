@@ -11,7 +11,7 @@ tags:
 
 ## Everything new in ES7
 
-ES7 introduced only two new features :
+ES7 (or ES 2016) introduced only two new features :
 
 - `Array.prototype.includes()`
 - the exponential operator
