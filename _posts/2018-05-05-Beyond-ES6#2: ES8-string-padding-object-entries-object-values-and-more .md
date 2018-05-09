@@ -1,5 +1,5 @@
 ---
-title: "JavaScript beyond ES6 - ES8: string padding, `Object.entries()`, `Object.values()` and more"
+title: "JavaScript beyond ES6#2 - ES8: string padding, `Object.entries()`, `Object.values()` and more"
 categories:
   - JavaScript
 tags:

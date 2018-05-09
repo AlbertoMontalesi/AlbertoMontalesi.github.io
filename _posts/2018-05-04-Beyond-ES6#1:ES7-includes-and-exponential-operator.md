@@ -1,5 +1,5 @@
 ---
-title: "JavaScript beyond ES6 - ES7: `includes()` & exponential operator"
+title: "JavaScript beyond ES6#1 - ES7: `includes()` & exponential operator"
 categories:
   - JavaScript
 tags:
