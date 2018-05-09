@@ -128,7 +128,7 @@ function func() {
   let promise = Promise.resolve(1);
   let result = await promise; 
 }
-funct();
+func();
 // SyntaxError: await is only valid in async functions and async generators
 
 
@@ -145,7 +145,7 @@ let result = await response;
 ## Error handling
 
 In a normal promise we would use `.catch()` to catch eventual errors returned by the promise.
-Here it is not much different:
+Here, it is not much different:
 
 ```js
 async function asyncFunc() {
