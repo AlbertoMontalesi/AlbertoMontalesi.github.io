@@ -1,5 +1,5 @@
 ---
-title: "JavaScript beyond ES6#2 - ES8: string padding, `Object.entries()`, `Object.values()` and more"
+title: "JavaScript beyond ES6#2 - ES2017: string padding, `Object.entries()`, `Object.values()` and more"
 categories:
   - JavaScript
 tags:
@@ -9,7 +9,7 @@ tags:
 
 ![beyond-es6-2](https://albertomontalesi.github.io/assets/images/BEYOND-ES6/beyond-es6-card-2.jpg)
 
-ES8 (or E 2017) introduced many new cool features, which we are going to see here. I will discuss `Async` and `Await` later as they deserve more attention.
+ES2017 introduced many new cool features, which we are going to see here. I will discuss `Async` and `Await` later as they deserve more attention.
 
 ## String padding(`padStart` and `padEnd`)
 
@@ -18,11 +18,11 @@ We can now add some padding to our strings, either at the end (`padEnd`) or at t
 ```js
 "hello".padStart(6);
 // " hello"
-"mystring".padEnd(6);
+"hello".padEnd(6);
 // "hello "
 ```
 
-We said we want 6 as our padding but why in both cases we got only 1 space?
+We said we want 6 as our padding, but why in both cases we got only 1 space?
 It happens because `padStart` and `padEnd` will go and fill the empty spaces. In our example "hello" is 5 letters, and our padding is 6, which leaves only 1 empty space.
 
 Look at this example
@@ -54,13 +54,13 @@ strings.forEach(str => console.log(str.padStart(longestString)));
 //            short
 ```
 
-First we grabbed the longest of our strings and measured its length. We then applied a `padStart` to all the strings based on the length of the longest so that we now have them all perfectly aligned to the right.
+First we grabbed the longest of our strings and measured its length. We then applied a `padStart` to all the strings based on the length of the longest so that we now have all of them perfectly aligned to the right.
 
 &nbsp;
 
 ### Add a custom value to the padding
 
-We are not bound to just add a white space as a pading, we can pass both strings and numbers.
+We are not bound to just add a white space as a padding, we can pass both strings and numbers.
 
 ```js
 "hello".padEnd(13," Alberto");
@@ -79,7 +79,7 @@ Let's first create an Object.
 
 ```js
 const family = {
-  dad: "Jonathan Kent",
+  father: "Jonathan Kent",
   mother: "Martha Kent",
   son: "Clark Kent",
 }
@@ -89,12 +89,12 @@ In previous versions of JavaScript we would have accessed the values inside the 
 
 ```js
 Object.keys(family);
-// (3) ["dad", "mother", "son"]
-family.dad;
+// (3) ["father", "mother", "son"]
+family.father;
 "Jonathan Kent"
 ```
 
-`Object.keys()` returned us only the keys of the object that then had to use to access the values.
+`Object.keys()` returned us only the keys of the object that we then had to use to access the values.
 
 We now have two more ways of accessing our objects:
 
@@ -103,7 +103,7 @@ Object.values(family);
 // (3) ["Jonathan Kent", "Martha Kent", "Clark Kent"]
 
 Object.entries(family);
-// (2) ["dad", "Jonathan Kent"]
+// (2) ["father", "Jonathan Kent"]
 // (2) ["mother", "Martha Kent"]
 // (2) ["son", "Clark Kent"]
 ```
@@ -125,6 +125,7 @@ const myObj = {
     console.log("hello");
   },
 }
+Object.getOwnPropertyDescriptors(myObj);
 // age:{value: 25, writable: true, enumerable: true, configurable: true}
 
 // greet:{value: ƒ, writable: true, enumerable: true, configurable: true}

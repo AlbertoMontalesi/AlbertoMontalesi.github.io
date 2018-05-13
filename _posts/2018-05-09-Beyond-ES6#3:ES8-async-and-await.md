@@ -1,5 +1,5 @@
 ---
-title: "JavaScript beyond ES6#3 - ES8: `async` and `await`"
+title: "JavaScript beyond ES6#3 - ES2017: `async` and `await`"
 categories:
   - JavaScript
 tags:
@@ -9,7 +9,7 @@ tags:
 
 ![beyond-es6-3](https://albertomontalesi.github.io/assets/images/BEYOND-ES6/beyond-es6-card-3.jpg)
 
-ES8 (or ES2017) introuced a new way of working with promises, called "async/await".
+ES2017 introuced a new way of working with promises, called "async/await".
 
 &nbsp;
 
@@ -88,7 +88,9 @@ function walk(amount) {
   });
 }
 
+// create an async function
 async function go() {
+  // use the keyword await to wait for the response
   const res = await walk(500);
   console.log(res);
   const res2 = await walk(900);
@@ -153,7 +155,7 @@ async function asyncFunc() {
   try {
     let response = await fetch('http:your-url');
   } catch(err) {
-  }
+    }
     console.log(err); 
 }
 
@@ -161,7 +163,7 @@ asyncFunc();
 // TypeError: failed to fetch
 ```
 
-We use `try...catch` to grab the error but in case we do not have them we can still catch the error like this:
+We use `try...catch` to grab the error but in a case where  we do not have them we can still catch the error like this:
 
 
 ``` js

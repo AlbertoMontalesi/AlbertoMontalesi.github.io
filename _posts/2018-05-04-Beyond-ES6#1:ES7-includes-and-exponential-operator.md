@@ -1,5 +1,5 @@
 ---
-title: "JavaScript beyond ES6#1 - ES7: `includes()` & exponential operator"
+title: "JavaScript beyond ES6#1 - ES2016: `includes()` & exponential operator"
 categories:
   - JavaScript
 tags:
@@ -9,9 +9,9 @@ tags:
 
 ![beyond-es6-1](https://albertomontalesi.github.io/assets/images/BEYOND-ES6/beyond-es6-card-1.jpg)
 
-## Everything new in ES7
+## Everything new in ES2016
 
-ES7 (or ES 2016) introduced only two new features :
+ES2016 introduced only two new features :
 
 - `Array.prototype.includes()`
 - the exponential operator
@@ -34,7 +34,7 @@ array.includes(3);
 
 ### Combine `includes()` with `fromIndex`
 
-We can provide `.includes()` with an index where to begin searching for an element. Default is 0, but we can also pass a negative value .
+We can provide `.includes()` with an index where to begin searching for an element. Default is 0, but we can also pass a negative value.
 
 The first value we pass is the element to search and the second one is the index:
 
@@ -51,9 +51,9 @@ array.includes(11,-3);
 // true
 ```
 
-`array.includes(5,4);` returned `false` because despite the array actually contains the number 5, it does so at the index 2 but we started looking at position 4. That's why we coulndt find it and it returned `false`.
+`array.includes(5,4);` returned `false` because, despite the array actually contains the number 5, it is at the index 2 but we started looking at position 4. That's why we couldn't find it and it returned `false`.
 
-`array.includes(1,-1);` returned `false` because we started looking at the index -1 and then continue from that point.
+`array.includes(1,-1);` returned `false` because we started looking at the index -1 (which is the last element of the array) and then continued from that point onwards.
 
 `array.includes(11,-3);` returned `true` because we went back to the index -3 and moved up, finding the value 11 on our path.
 
@@ -61,7 +61,7 @@ array.includes(11,-3);
 
 ## The exponential operator
 
-Prior to ES7 we would have done this:
+Prior to ES2016 we would have done this:
 
 ``` js
 Math.pow(2,2);
