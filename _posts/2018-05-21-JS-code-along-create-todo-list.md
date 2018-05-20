@@ -43,7 +43,7 @@ From this:
 
 To this:
 
-``` jade
+```
 .container
   h2#title Title
 ```
@@ -77,7 +77,7 @@ We need three components in our markup:
 - a section where to display tasks to do
 - a section where to display tasks completed
 
-``` jade
+```
  body
     #container
       header
@@ -95,7 +95,7 @@ We have a `#container` where we put our three components and inside of it we hav
 
 Next step is to add an icon to our add button
 
-```jade
+```
 button#add
   svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512")
     path(d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z")
@@ -107,7 +107,7 @@ For now inside our `ul` we put nothing, that's because we will use JavaScript to
 
 The structure we will use will be like this:
 
-``` jade
+``` 
 ul.todo#todo
   li item1
     .buttons
@@ -189,7 +189,7 @@ body {
 
 Remember to add a link to google font in our `head`
 
-```jade
+```
 link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet")
 ```
 
